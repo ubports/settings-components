@@ -1,4 +1,4 @@
-ubuntu-settings-components (0.12+17.04.20170118-0ubuntu1) zesty; urgency=medium
+ubuntu-settings-components (0.12.1+ubports1) xenial; urgency=medium
 
   [ Pete Woods ]
   * Compatibility with unversioned cmake-extras modules (LP: #1563573)
