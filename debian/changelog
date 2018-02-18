@@ -1,4 +1,4 @@
-ubuntu-settings-components (0.12.1+ubports1) xenial; urgency=medium
+ubuntu-settings-components (0.12.1+ubports1) bionic; urgency=medium
 
   [ Pete Woods ]
   * Compatibility with unversioned cmake-extras modules (LP: #1563573)
