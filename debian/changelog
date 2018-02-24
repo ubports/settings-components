@@ -1,3 +1,9 @@
+ubuntu-settings-components (0.12.1+ubports2) xenial; urgency=medium
+
+  * Rebuild without change 
+
+ -- Marius <mariogrip@ubuntu.com>  Sun, 25 Feb 2018 00:15:56 +0100
+
 ubuntu-settings-components (0.12.1+ubports1) xenial; urgency=medium
 
   [ Pete Woods ]
