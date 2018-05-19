@@ -28,6 +28,7 @@ Item {
     property alias buttonText: sendButton.text
     property bool activateEnabled: false
     property alias textHint: replyField.placeholderText
+    property alias textFieldFocused: replyField.focus
 
     signal activated(var value)
 
@@ -42,14 +43,6 @@ Item {
             id: replyField
             objectName: "replyText"
             autoSize: true
-
-            onEnabledChanged: {
-                //Make sure that the component lost focus when enabled = false,
-                //otherwise it will get focus again when enable = true
-                if (!enabled) {
-                    focus = false;
-                }
-            }
         }
 
         Button {
