@@ -36,6 +36,7 @@ SimpleMessageMenu {
         id: actionTextField
         activateEnabled: true
         buttonText: i18n.dtr("ubuntu-settings-components", "Send")
+        textFieldFocused: enabled ? menu.selected : false
 
         onActivated: {
             menu.replied(value);
