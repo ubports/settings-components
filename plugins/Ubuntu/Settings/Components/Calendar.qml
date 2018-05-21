@@ -291,8 +291,9 @@ Component {
                 model: priv.days
 
                 delegate: Label {
+                    readonly property string localeName : Qt.locale().name === "pt_PT" ? "pt" : Qt.locale().name // https://github.com/ubports/ubuntu-touch/issues/510
                     objectName: "weekDay" + index
-                    text: Qt.locale(i18n.language).standaloneDayName((index + firstDayOfWeek) % priv.days, Locale.ShortFormat).toUpperCase()
+                    text: Qt.locale(localeName).standaloneDayName((index + firstDayOfWeek) % priv.days, Locale.ShortFormat).toUpperCase()
                     textSize: Label.XSmall
                     // FIXME: There's no good palette that covers both
                     //        Ambiance (Ash) and Suru (Silk)
