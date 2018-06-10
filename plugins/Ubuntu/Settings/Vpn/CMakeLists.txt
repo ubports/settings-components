@@ -18,6 +18,6 @@ add_library(UbuntuSettingsVpn MODULE
     ubuntusettingsvpn.cpp
 )
 
-qt5_use_modules(UbuntuSettingsVpn Core Qml Quick)
+target_link_libraries(UbuntuSettingsVpn Qt5::Core Qt5::Qml Qt5::Quick)
 
 add_usc_plugin(Ubuntu.Settings.Vpn 0.1 Ubuntu/Settings/Vpn TARGETS UbuntuSettingsVpn)
