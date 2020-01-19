@@ -82,7 +82,6 @@ Dialog {
             Layout.fillWidth: true
             visible: connection !== null
             text: i18n.dtr("ubuntu-settings-components", "Remove")
-            color: UbuntuColors.red
             onClicked: {
                 connection.remove();
                 PopupUtils.close(preview);
@@ -94,6 +93,7 @@ Dialog {
             Layout.fillWidth: true
             visible: connection !== null
             text: i18n.dtr("ubuntu-settings-components", "Change")
+            color: theme.palette.normal.positive
             onClicked: changeClicked(connection)
         }
 
@@ -110,6 +110,7 @@ Dialog {
             Layout.fillWidth: true
             visible: configuration !== null
             text: i18n.dtr("ubuntu-settings-components", "Install")
+            color: theme.palette.normal.positive
             onClicked: installClicked(configuration)
         }
     }
