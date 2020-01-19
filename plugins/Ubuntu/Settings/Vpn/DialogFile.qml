@@ -160,7 +160,6 @@ Dialog {
                 Layout.fillWidth: true
                 text: i18n.dtr("ubuntu-settings-components", "Cancel")
                 onClicked: rejectFunc()
-                color: UbuntuColors.red
             }
 
             Button {
@@ -169,7 +168,7 @@ Dialog {
                 enabled: currentFilePath !== ""
                 text: i18n.dtr("ubuntu-settings-components", "Accept")
                 onClicked: acceptFunc()
-                color: UbuntuColors.green
+                color: theme.palette.normal.positive
             }
         }
     }
