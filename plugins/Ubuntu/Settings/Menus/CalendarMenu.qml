@@ -103,18 +103,13 @@ BaseMenu {
             objectName: "calenderMenuSlotsLayout"
             style: menuStyle
 
-            mainSlot: Item {
-                // XXX: this extra Item seems to be needed by Qt 5.4,
-                //      we can remove it once migrated to new versions
-                height: calendar.height
-                Calendar {
-                    id: calendar
-                    objectName: "calendar"
-                    interactive: !pointerMode
-                    anchors {
-                        left: parent.left
-                        right: parent.right
-                    }
+            mainSlot: Calendar {
+                id: calendar
+                objectName: "calendar"
+                interactive: !pointerMode
+                anchors {
+                    left: parent.left
+                    right: parent.right
                 }
             }
         }
