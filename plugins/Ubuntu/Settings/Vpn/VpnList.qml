@@ -55,7 +55,7 @@ ListView {
 
         divider.visible: true
 
-        trailingActions: ListItemActions {
+        leadingActions: ListItemActions {
            actions: [
                Action {
                    iconName: "delete"
