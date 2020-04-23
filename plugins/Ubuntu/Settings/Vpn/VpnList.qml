@@ -32,6 +32,7 @@ ListView {
     }
 
     height: contentItem.height
+    clip: true
 
     delegate: ListItem {
         objectName: "vpnListConnection" + index
