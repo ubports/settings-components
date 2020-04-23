@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-18 15:20+0000\n"
+"POT-Creation-Date: 2020-04-23 22:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Send"
 msgstr ""
 
-#: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:170
+#: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:169
 msgid "Accept"
 msgstr ""
 
@@ -470,7 +470,7 @@ msgstr ""
 msgid "VPN"
 msgstr ""
 
-#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:96
+#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:95
 msgid "Change"
 msgstr ""
 
