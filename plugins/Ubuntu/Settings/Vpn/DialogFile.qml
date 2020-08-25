@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.7
+import QtQuick 2.4
 import QtQuick.Layouts 1.1
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
@@ -129,14 +129,15 @@ Dialog {
                 Row {
                     height: parent.height
                     width: parent.width
-                    padding: units.gu(2)
                     spacing: units.gu(2)
                     Icon {
                         width: 64
                         height: 64
+                        anchors.verticalCenter: parent.verticalCenter
                         name: model.fileIsDir ? "folder" : "empty"
                     }
                     Label { 
+                        anchors.verticalCenter: parent.verticalCenter
                         text: model.fileName
                     }
                 }
