@@ -6,53 +6,154 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-25 15:44+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-18 15:20+0000\n"
 "PO-Revision-Date: 2016-03-29 04:46+0000\n"
 "Last-Translator: karm <melo@carmu.com>\n"
 "Language-Team: Interlingua <ia@li.org>\n"
+"Language: ia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2016-05-27 05:36+0000\n"
 "X-Generator: Launchpad (build 18053)\n"
 
-#: plugins/Ubuntu/Settings/Components/QuickReply.qml:63
-msgid "Quick reply with:"
-msgstr "Responsa rapide con:"
+#: plugins/Ubuntu/Settings/Components/Calendar.qml:232
+msgctxt "Header text: keep it short and upper case"
+msgid "WEEK"
+msgstr ""
 
-#: plugins/Ubuntu/Settings/Menus/CalendarMenu.qml:57
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:82
+msgid "Fingerprint Name"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:109
+#, fuzzy
+#| msgid "Delete configuration"
+msgid "Delete Fingerprint"
+msgstr "Deler le configuration"
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:126
+msgid "Sorry, the fingerprint could not be deleted."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:131
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:362
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:138
+#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:149
+msgid "OK"
+msgstr "OK"
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:32
+msgid "Fingerprint ID"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:93
+#, qt-format
+msgid "Finger %1"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:212
+msgid "Passcode required"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:216
+msgid "You must set a passcode to use fingerprint ID"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:223
+msgid "Set Passcode…"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:299
+msgid "Add fingerprint"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:312
+#, fuzzy
+#| msgid "Remove"
+msgid "Remove All…"
+msgstr "Remover"
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:327
+msgid "Are you sure you want to forget all stored fingerprints?"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:336
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:355
+#: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:161
+#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:136
+#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:104
+msgid "Cancel"
+msgstr "Cancellar"
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:343
+#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:84
+msgid "Remove"
+msgstr "Remover"
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:357
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:103
+msgid "Sorry, the reader doesn’t seem to be working."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:61
+msgid "Tap your finger repeatedly on the reader."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:78
+msgid "Keep your finger on the reader for longer."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:94
+msgid "Back"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:131
+msgid "All done!"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:297
+msgid "Swipe your finger over the reader."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:311
+#, fuzzy, qt-format
+#| msgctxt "%1=month name, %2=4-digit year"
+#| msgid "%1 %2"
+msgid "%1%"
+msgstr "%1 %2"
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:380
+msgid "Next"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Menus/CalendarMenu.qml:59
 #, qt-format
 msgctxt "%1=month name, %2=4-digit year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:100
+#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:102
 msgid "Roaming"
 msgstr "Roaming"
 
-#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:122
+#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:127
 msgid "Unlock SIM"
 msgstr "Disblocar le SIM"
 
-#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:30
-msgid "Call back"
-msgstr "Appellar retro"
-
-#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:33
-#: plugins/Ubuntu/Settings/Menus/TextMessageMenu.qml:29
-msgid "Send"
-msgstr "Mandar"
-
-#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:58
+#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:64
 msgid "Message"
 msgstr "Message"
 
-#: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:161
-#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:134
-#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:104
-msgid "Cancel"
-msgstr "Cancellar"
+#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:76
+msgid "Call back"
+msgstr "Appellar retro"
+
+#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:93
+#: plugins/Ubuntu/Settings/Menus/TextMessageMenu.qml:38
+msgid "Send"
+msgstr "Mandar"
 
 #: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:170
 msgid "Accept"
@@ -360,8 +461,7 @@ msgid "You’re using this VPN for specific services."
 msgstr "Tu usa iste VPN pro specific servicios"
 
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/SomeTraffic.qml:33
-msgid ""
-"Your traffic to these services is private to them and the VPN provider."
+msgid "Your traffic to these services is private to them and the VPN provider."
 msgstr ""
 "Tu traffico pro iste servicios es private pro los e le suppletor de VPN."
 
@@ -370,13 +470,9 @@ msgid "Your Wi-Fi/mobile provider can track your use of any other services. "
 msgstr ""
 "Tu suppletor  Wi-Fi/mobile pote traciar tu uso de alcun altere servicios. "
 
-#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:26
+#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:25
 msgid "Set up VPN"
 msgstr "Configurar le VPN"
-
-#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:147
-msgid "OK"
-msgstr "OK"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnList.qml:62
 msgid "Delete configuration"
@@ -391,10 +487,6 @@ msgstr "VPN “%1”"
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:69
 msgid "VPN"
 msgstr "VPN"
-
-#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:84
-msgid "Remove"
-msgstr "Remover"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:96
 msgid "Change"
@@ -419,3 +511,6 @@ msgstr "Configurar le VPN"
 #: plugins/Ubuntu/Settings/Vpn/VpnTypeField.qml:32
 msgid "Type:"
 msgstr "Tipo:"
+
+#~ msgid "Quick reply with:"
+#~ msgstr "Responsa rapide con:"
