@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-18 15:20+0000\n"
-"PO-Revision-Date: 2020-10-26 22:41+0000\n"
+"PO-Revision-Date: 2020-11-01 10:45+0000\n"
 "Last-Translator: Adria <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports/"
 "settings-components/sc/>\n"
@@ -26,15 +26,15 @@ msgstr "CHIDA"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:82
 msgid "Fingerprint Name"
-msgstr ""
+msgstr "Nòmine de s'imprenta"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:109
 msgid "Delete Fingerprint"
-msgstr ""
+msgstr "Cantzella s'imprenta"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:126
 msgid "Sorry, the fingerprint could not be deleted."
-msgstr ""
+msgstr "Impossìbile cantzellare s'imprenta."
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:131
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:362
@@ -45,7 +45,7 @@ msgstr "AB"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:32
 msgid "Fingerprint ID"
-msgstr ""
+msgstr "Identificatzione cun imprenta"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:93
 #, qt-format
@@ -59,6 +59,8 @@ msgstr "Còdighe de atzessu rechestu"
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:216
 msgid "You must set a passcode to use fingerprint ID"
 msgstr ""
+"Depes cunfigurare unu còdighe de atzessu pro impreare s'identificatzione cun "
+"imprenta"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:223
 msgid "Set Passcode…"
@@ -66,7 +68,7 @@ msgstr "Cunfigura unu còdighe de atzessu"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:299
 msgid "Add fingerprint"
-msgstr ""
+msgstr "Agiunghe imprenta"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:312
 msgid "Remove All…"
@@ -74,7 +76,7 @@ msgstr "Cantzella totu…"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:327
 msgid "Are you sure you want to forget all stored fingerprints?"
-msgstr ""
+msgstr "Seguru chi boles cantzellare totu is imprentas sarvadas?"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:336
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:355
@@ -92,7 +94,7 @@ msgstr "Boga"
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:357
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:103
 msgid "Sorry, the reader doesn’t seem to be working."
-msgstr ""
+msgstr "Paret chi su letore no est funtzionende."
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:61
 msgid "Tap your finger repeatedly on the reader."
@@ -474,24 +476,24 @@ msgstr ""
 
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:96
 msgid "Change"
-msgstr ""
+msgstr "Muda"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:112
 msgid "Install"
-msgstr ""
+msgstr "Installa"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnRoutesField.qml:30
 msgid "Use this VPN for:"
-msgstr ""
+msgstr "Imprea custa VPN pro:"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnRoutesField.qml:60
 msgid "All network connections"
-msgstr ""
+msgstr "Totu is connessiones de rete"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnRoutesField.qml:76
 msgid "Its own network"
-msgstr ""
+msgstr "Sa rete sua"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnTypeField.qml:32
 msgid "Type:"
-msgstr ""
+msgstr "Genia:"
