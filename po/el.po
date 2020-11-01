@@ -6,221 +6,318 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-25 15:44+0200\n"
-"PO-Revision-Date: 2016-03-08 17:40+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Greek <el@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-18 15:20+0000\n"
+"PO-Revision-Date: 2020-10-29 01:02+0000\n"
+"Last-Translator: George Kitsopoulos <gkitsopoulos@tutanota.com>\n"
+"Language-Team: Greek <https://translate.ubports.com/projects/ubports/"
+"settings-components/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2016-05-27 05:36+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
 
-#: plugins/Ubuntu/Settings/Components/QuickReply.qml:63
-msgid "Quick reply with:"
+#: plugins/Ubuntu/Settings/Components/Calendar.qml:232
+msgctxt "Header text: keep it short and upper case"
+msgid "WEEK"
 msgstr ""
 
-#: plugins/Ubuntu/Settings/Menus/CalendarMenu.qml:57
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:82
+msgid "Fingerprint Name"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:109
+msgid "Delete Fingerprint"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:126
+msgid "Sorry, the fingerprint could not be deleted."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:131
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:362
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:138
+#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:149
+msgid "OK"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:32
+msgid "Fingerprint ID"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:93
+#, qt-format
+msgid "Finger %1"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:212
+msgid "Passcode required"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:216
+msgid "You must set a passcode to use fingerprint ID"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:223
+msgid "Set Passcode…"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:299
+msgid "Add fingerprint"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:312
+msgid "Remove All…"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:327
+msgid "Are you sure you want to forget all stored fingerprints?"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:336
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:355
+#: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:161
+#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:136
+#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:104
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:343
+#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:84
+msgid "Remove"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:357
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:103
+msgid "Sorry, the reader doesn’t seem to be working."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:61
+msgid "Tap your finger repeatedly on the reader."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:78
+msgid "Keep your finger on the reader for longer."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:94
+msgid "Back"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:131
+msgid "All done!"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:297
+msgid "Swipe your finger over the reader."
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:311
+#, qt-format
+msgid "%1%"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:380
+msgid "Next"
+msgstr ""
+
+#: plugins/Ubuntu/Settings/Menus/CalendarMenu.qml:59
 #, qt-format
 msgctxt "%1=month name, %2=4-digit year"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1%2"
 
-#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:100
+#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:102
 msgid "Roaming"
-msgstr ""
+msgstr "Περιαγωγή"
 
-#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:122
+#: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:127
 msgid "Unlock SIM"
-msgstr ""
+msgstr "Ξεκλείδωμα SIM"
 
-#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:30
-msgid "Call back"
-msgstr ""
-
-#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:33
-#: plugins/Ubuntu/Settings/Menus/TextMessageMenu.qml:29
-msgid "Send"
-msgstr ""
-
-#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:58
+#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:64
 msgid "Message"
-msgstr ""
+msgstr "Μήνυμα"
 
-#: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:161
-#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:134
-#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:104
-msgid "Cancel"
-msgstr ""
+#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:76
+msgid "Call back"
+msgstr "Επανάκληση"
+
+#: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:93
+#: plugins/Ubuntu/Settings/Menus/TextMessageMenu.qml:38
+msgid "Send"
+msgstr "Αποστολή"
 
 #: plugins/Ubuntu/Settings/Vpn/DialogFile.qml:170
 msgid "Accept"
-msgstr ""
+msgstr "Αποδοχή"
 
 #: plugins/Ubuntu/Settings/Vpn/FileSelector.qml:25
 msgid "Choose…"
-msgstr ""
+msgstr "Επιλογή…"
 
 #: plugins/Ubuntu/Settings/Vpn/FileSelector.qml:34
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:431
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:513
 msgid "None"
-msgstr ""
+msgstr "Κανένα"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:29
 msgid "Authentication type:"
-msgstr ""
+msgstr "Τύπος πιστοποίησης:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:42
 msgid "Certificates (TLS)"
-msgstr ""
+msgstr "Πιστοποιητικά (TLS)"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:43
 msgid "Password"
-msgstr ""
+msgstr "Κωδικός"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:44
 msgid "Password with certificates (TLS)"
-msgstr ""
+msgstr "Κωδικός με πιστοποιητικά (TLS)"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:45
 msgid "Static key"
-msgstr ""
+msgstr "Στατικό κλειδί"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:123
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:114
 msgid "Server:"
-msgstr ""
+msgstr "Σέρβερ:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:137
 msgid "Port:"
-msgstr ""
+msgstr "Θύρα:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:187
 msgid "Use custom gateway port"
-msgstr ""
+msgstr "Χρήση προσαρμοσμένης θύρας πύλης"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:215
 msgid "Protocol:"
-msgstr ""
+msgstr "Πρωτόκολλο:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:304
 msgid "Username:"
-msgstr ""
+msgstr "Όνομα χρήστη:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:319
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:165
 msgid "Password:"
-msgstr ""
+msgstr "Κωδικός:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:341
 msgid "Client certificate:"
-msgstr ""
+msgstr "Πιστοποιητικό πελάτη:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:349
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:396
 msgid "Choose Certificate…"
-msgstr ""
+msgstr "Επιλογή Πιστοποιητικού…"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:356
 msgid "Private key:"
-msgstr ""
+msgstr "Ιδιωτικό κλειδί:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:364
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:417
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:497
 msgid "Choose Key…"
-msgstr ""
+msgstr "Επιλογή Κλειδιού…"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:371
 msgid "Key password:"
-msgstr ""
+msgstr "Κωδικός κλειδιού:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:388
 msgid "CA certificate:"
-msgstr ""
+msgstr "Πιστοποιητικό CA:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:409
 msgid "Static key:"
-msgstr ""
+msgstr "Στατικό κλειδί:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:421
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:502
 msgid "Key direction:"
-msgstr ""
+msgstr "Κατεύθυνση κλειδιού:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:439
 msgid "Remote IP:"
-msgstr ""
+msgstr "Απομακρυσμένη IP:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:454
 msgid "Local IP:"
-msgstr ""
+msgstr "Τοπική IP:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:479
 msgid "Use additional TLS authentication:"
-msgstr ""
+msgstr "Χρήση επιπλέον ελέγχου ταυτότητας TLS:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:488
 msgid "TLS key:"
-msgstr ""
+msgstr "Κλειδί TLS:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:530
 msgid "Verify peer certificate:"
-msgstr ""
+msgstr "Επαλήθευση πιστοποιητικού peer:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:539
 msgid "Peer certificate TLS type:"
-msgstr ""
+msgstr "Πιστοποιητικό peer τύπου TLS:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:547
 msgid "Server"
-msgstr ""
+msgstr "Σέρβερ"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:548
 msgid "Client"
-msgstr ""
+msgstr "Πελάτης"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:558
 msgid "Cipher:"
-msgstr ""
+msgstr "Κρυπτογράφημα:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:565
 msgid "Default"
-msgstr ""
+msgstr "Προκαθορισμένο"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:595
 msgid "Compress data"
-msgstr ""
+msgstr "Συμπίεση αρχείων"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:150
 msgid "User:"
-msgstr ""
+msgstr "Χρήστης:"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:180
 msgid "NT Domain:"
-msgstr ""
+msgstr "Τομέας NT:"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:192
 msgid "Authentication methods:"
-msgstr ""
+msgstr "Μέθοδοι ελέγχου ταυτότητας:"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:292
 msgid "Use Point-to-Point encryption"
-msgstr ""
+msgstr "Χρήση κρυπτογράφησης Point-to-Point"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:301
 msgid "All Available (Default)"
-msgstr ""
+msgstr "Όλα διαθέσιμα (Προεπιλογή)"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:302
 msgid "128-bit (most secure)"
-msgstr ""
+msgstr "128-bit (πιο ασφαλές)"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:303
 msgid "40-bit (less secure)"
-msgstr ""
+msgstr "40-bit (λιγότερο ασφαλές)"
 
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:319
 msgid "Allow stateful encryption"
@@ -351,20 +448,15 @@ msgid "You’re using this VPN for specific services."
 msgstr ""
 
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/SomeTraffic.qml:33
-msgid ""
-"Your traffic to these services is private to them and the VPN provider."
+msgid "Your traffic to these services is private to them and the VPN provider."
 msgstr ""
 
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/SomeTraffic.qml:39
 msgid "Your Wi-Fi/mobile provider can track your use of any other services. "
 msgstr ""
 
-#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:26
+#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:25
 msgid "Set up VPN"
-msgstr ""
-
-#: plugins/Ubuntu/Settings/Vpn/VpnEditor.qml:147
-msgid "OK"
 msgstr ""
 
 #: plugins/Ubuntu/Settings/Vpn/VpnList.qml:62
@@ -379,10 +471,6 @@ msgstr ""
 
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:69
 msgid "VPN"
-msgstr ""
-
-#: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:84
-msgid "Remove"
 msgstr ""
 
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:96
