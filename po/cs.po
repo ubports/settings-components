@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-18 15:20+0000\n"
-"PO-Revision-Date: 2020-11-01 11:34+0000\n"
+"PO-Revision-Date: 2020-11-01 11:36+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://translate.ubports.com/projects/ubports/"
 "settings-components/cs/>\n"
@@ -162,19 +162,19 @@ msgstr "Zvolit…"
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:431
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:513
 msgid "None"
-msgstr ""
+msgstr "Žádný"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:29
 msgid "Authentication type:"
-msgstr ""
+msgstr "Typ ověření:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:42
 msgid "Certificates (TLS)"
-msgstr ""
+msgstr "Certifikáty (TLS)"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:43
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:44
 msgid "Password with certificates (TLS)"
