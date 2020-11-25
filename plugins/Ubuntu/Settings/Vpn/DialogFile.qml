@@ -17,7 +17,6 @@
 import QtQuick 2.4
 import QtQuick.Layouts 1.1
 import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItems
 import Ubuntu.Components.Popups 1.3
 import Ubuntu.Settings.Vpn 0.1
 import Qt.labs.folderlistmodel 2.1
@@ -91,7 +90,7 @@ Dialog {
                     Rectangle {
                         width: units.gu(0.7)
                         height: width
-                        color: "gray"
+                        color: theme.palette.normal.base
                         rotation: 45
                         visible: (model.index > 0)
                         anchors.verticalCenter: parent.verticalCenter
@@ -101,7 +100,7 @@ Dialog {
                         text: model.modelData["name"]
                         font.weight: (isCurrent ? Font.Bold : Font.Normal)
                         font.underline: hoverDetector.containsMouse
-                        color: "darkblue"
+                        color: theme.palette.normal.activity
                         anchors.verticalCenter: parent.verticalCenter
 
                         MouseArea {
@@ -116,36 +115,41 @@ Dialog {
             }
         }
 
-        Rectangle {
+        ListView {
+            objectName: "vpnFileList"
             Layout.fillWidth: true
             Layout.fillHeight: true
+            anchors.margins: 1
+            clip: true
+            model: modelFs
 
-            border {
-                width: 1
-                color: "lightgrey"
-            }
+            delegate: ListItem {
+                objectName: "vpnFileItem_" + model.fileName
 
-            ListView {
-                objectName: "vpnFileList"
-                anchors.fill: parent
-                anchors.margins: 1
-                clip: true
-                model: modelFs
+                Row {
+                    height: parent.height
+                    width: parent.width
+                    spacing: units.gu(2)
+                    Icon {
+                        width: 64
+                        height: 64
+                        anchors.verticalCenter: parent.verticalCenter
+                        name: model.fileIsDir ? "folder" : "empty"
+                    }
+                    Label { 
+                        anchors.verticalCenter: parent.verticalCenter
+                        text: model.fileName
+                    }
+                }
 
-                delegate: ListItems.Standard {
-                    objectName: "vpnFileItem_" + model.fileName
-                    text: model.fileName
-                    iconFrame: false
-                    iconName: model.fileIsDir ? "folder" : "empty"
 
-                    selected: (model.filePath === currentFilePath)
+                selected: (model.filePath === currentFilePath)
 
-                    onClicked: {
-                        if (model.fileIsDir) {
-                            modelFs.folder = model.fileURL
-                        } else {
-                            currentFilePath = model.filePath
-                        }
+                onClicked: {
+                    if (model.fileIsDir) {
+                        modelFs.folder = model.fileURL
+                    } else {
+                        currentFilePath = model.filePath
                     }
                 }
             }
