@@ -9,3 +9,6 @@ export QT_SELECT=5
 
 %:
 	dh $@ --parallel --fail-missing
+
+override_dh_auto_test:
+	dh_auto_test --no-parallel -- -k xvfballtests
