@@ -312,7 +312,7 @@ Item {
             waitForRendering(sendButton)
 
             mouseClick(sendButton, messageButton.width / 2, messageButton.height / 2);
-            tryVerify(function() { return signalSpyReply.count > 0 });
+            compare(signalSpyReply.count > 0, true);
             compare(textMessageReply, "reply1", "Text message did not reply with correct text.");
         }
 
@@ -337,7 +337,7 @@ Item {
             mouseClick(messageButton, messageButton.width / 2, messageButton.height / 2);
 
             mouseClick(replyText, replyText.width / 2, replyText.height / 2);
-            tryCompare(replyText, "focus", true, 10000, "Reply text should have focus after mouse click");
+            compare(replyText.focus, true, "Reply text should have focus after mouse click");
 
             keyClick("a"); keyClick("b");
             keyClick(Qt.Key_Return);
@@ -345,7 +345,7 @@ Item {
 
             compare(signalSpyTriggered.count, 0, "Item should not have triggered on 'return'")
 
-            tryCompare(replyText, "focus", true, 10000, "Reply text should still have focus after return pressed");
+            compare(replyText.focus, true, "Reply text should still have focus after return pressed");
             compare(replyText.text, "ab\ncd");
         }
     }

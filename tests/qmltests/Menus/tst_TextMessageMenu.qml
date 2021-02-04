@@ -270,7 +270,7 @@ Item {
             waitForRendering(sendButton)
 
             mouseClick(sendButton, sendButton.width / 2, sendButton.height / 2);
-            tryVerify(function(){ return signalSpyReply.count > 0 });
+            compare(signalSpyReply.count > 0, true);
             compare(textMessageReply, "reply1", "Text message did not reply with correct text.");
         }
 
