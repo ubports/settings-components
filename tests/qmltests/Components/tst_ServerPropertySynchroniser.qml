@@ -309,9 +309,9 @@ Item {
 
             sliderSync.maximumWaitBufferInterval = -1
 
-            tryCompare(switchBackend, "inSync", true);
-            tryCompare(checkBackend, "inSync", true);
-            tryCompare(sliderBackend, "inSync", true);
+            tryCompare(switchBackend, "inSync", true, 10000);
+            tryCompare(checkBackend, "inSync", true, 10000);
+            tryCompare(sliderBackend, "inSync", true, 10000);
 
             switchSync.serverTarget = switchBackend;
             switchSync.serverProperty = "checked";
