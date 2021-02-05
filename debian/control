@@ -17,6 +17,7 @@ Build-Depends: cmake,
                qtdeclarative5-dev,
                qtdeclarative5-dev-tools,
                suru-icon-theme,
+               xvfb,
 Standards-Version: 3.9.4
 Homepage: https://launchpad.net/ubuntu-settings-components
 # If you don't have have commit access to this branch but would like to upload

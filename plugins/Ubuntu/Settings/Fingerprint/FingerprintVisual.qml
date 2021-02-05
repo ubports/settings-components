@@ -19,6 +19,7 @@
 
 import QtQuick 2.4
 import Ubuntu.Settings.Fingerprint 0.1
+import "."
 
 SegmentedImage {
     id: segmentedImage

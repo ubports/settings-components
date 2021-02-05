@@ -7,5 +7,17 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL=4
 
 export QT_SELECT=5
 
+# Skip tests on architectures where tests are being extremely flaky
+testskip_architectures := arm64 armhf
+
 %:
 	dh $@ --parallel --fail-missing
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+ifneq (,$(filter $(DEB_HOST_ARCH),$(testskip_architectures)))
+	-dh_auto_test --no-parallel -- -k xvfballtests
+else
+	dh_auto_test --no-parallel -- -k xvfballtests
+endif
+endif
