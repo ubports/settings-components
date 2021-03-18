@@ -8,34 +8,34 @@ msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-18 15:20+0000\n"
-"PO-Revision-Date: 2016-03-22 19:43+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
-"Language-Team: Finnish <fi@li.org>\n"
+"PO-Revision-Date: 2020-11-23 18:30+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://translate.ubports.com/projects/ubports/"
+"settings-components/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 "X-Launchpad-Export-Date: 2016-05-27 05:36+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
 
 #: plugins/Ubuntu/Settings/Components/Calendar.qml:232
 msgctxt "Header text: keep it short and upper case"
 msgid "WEEK"
-msgstr ""
+msgstr "VIIKKO"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:82
 msgid "Fingerprint Name"
-msgstr ""
+msgstr "Sormenjäljen nimi"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:109
-#, fuzzy
-#| msgid "Delete configuration"
 msgid "Delete Fingerprint"
-msgstr "Poista määritykset"
+msgstr "Poista sormenjälki"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:126
 msgid "Sorry, the fingerprint could not be deleted."
-msgstr ""
+msgstr "Valitettavasti sormenjälkeä ei voitu poistaa."
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprint.qml:131
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:362
@@ -46,38 +46,36 @@ msgstr "OK"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:32
 msgid "Fingerprint ID"
-msgstr ""
+msgstr "Sormenjäljen tunniste"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:93
 #, qt-format
 msgid "Finger %1"
-msgstr ""
+msgstr "Sormi %1"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:212
 msgid "Passcode required"
-msgstr ""
+msgstr "Suojakoodi vaaditaan"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:216
 msgid "You must set a passcode to use fingerprint ID"
-msgstr ""
+msgstr "Sinun tulee asettaa suojakoodi käyttääksesi sormenjäljen tunnistetta"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:223
 msgid "Set Passcode…"
-msgstr ""
+msgstr "Aseta suojakoodi…"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:299
 msgid "Add fingerprint"
-msgstr ""
+msgstr "Lisää sormenjälki"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:312
-#, fuzzy
-#| msgid "Remove"
 msgid "Remove All…"
-msgstr "Poista"
+msgstr "Poista kaikki…"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:327
 msgid "Are you sure you want to forget all stored fingerprints?"
-msgstr ""
+msgstr "Haluatko varmasti unohtaa kaikki talletetut sormenjäljet?"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:336
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:355
@@ -95,42 +93,42 @@ msgstr "Poista"
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:357
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:103
 msgid "Sorry, the reader doesn’t seem to be working."
-msgstr ""
+msgstr "Valitettavasti lukija ei vaikuta toimivan."
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:61
 msgid "Tap your finger repeatedly on the reader."
-msgstr ""
+msgstr "Napauta sormeasi toistuvasti lukijan päällä."
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:78
 msgid "Keep your finger on the reader for longer."
-msgstr ""
+msgstr "Pidä sormesi lukijassa kiinni pidemmän aikaa."
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:94
 msgid "Back"
-msgstr ""
+msgstr "Takaisin"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:131
 msgid "All done!"
-msgstr ""
+msgstr "Kaikki valmista!"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:297
 msgid "Swipe your finger over the reader."
-msgstr ""
+msgstr "Pyyhkäise sormeasi lukijassa."
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:311
 #, qt-format
 msgid "%1%"
-msgstr ""
+msgstr "%1 %"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Setup.qml:380
 msgid "Next"
-msgstr ""
+msgstr "Seuraava"
 
 #: plugins/Ubuntu/Settings/Menus/CalendarMenu.qml:59
 #, qt-format
 msgctxt "%1=month name, %2=4-digit year"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: plugins/Ubuntu/Settings/Menus/ModemInfoItem.qml:102
 msgid "Roaming"
@@ -169,23 +167,23 @@ msgstr "Ei mitään"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:29
 msgid "Authentication type:"
-msgstr ""
+msgstr "Tunnistautumisen tyyppi:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:42
 msgid "Certificates (TLS)"
-msgstr ""
+msgstr "Varmenteet (TLS)"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:43
 msgid "Password"
-msgstr ""
+msgstr "Salasana"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:44
 msgid "Password with certificates (TLS)"
-msgstr ""
+msgstr "Salasana varmenteiden kera (TLS)"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/AuthTypeField.qml:45
 msgid "Static key"
-msgstr ""
+msgstr "Staattinen avain"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:123
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:114
@@ -206,7 +204,7 @@ msgstr "Protokolla:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:304
 msgid "Username:"
-msgstr ""
+msgstr "Käyttäjätunnus:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:319
 #: plugins/Ubuntu/Settings/Vpn/Pptp/Editor.qml:165
@@ -242,7 +240,7 @@ msgstr "CA-varmenne:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:409
 msgid "Static key:"
-msgstr ""
+msgstr "Staattinen avain:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:421
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:502
@@ -251,11 +249,11 @@ msgstr "Avaimen suunta:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:439
 msgid "Remote IP:"
-msgstr ""
+msgstr "Etä-IP:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:454
 msgid "Local IP:"
-msgstr ""
+msgstr "Paikallinen IP:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:479
 msgid "Use additional TLS authentication:"
@@ -267,11 +265,11 @@ msgstr "TLS-avain:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:530
 msgid "Verify peer certificate:"
-msgstr ""
+msgstr "Vahvista vertaisen varmenne:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:539
 msgid "Peer certificate TLS type:"
-msgstr ""
+msgstr "Vertaisen varmenteen TLS-tyyppi:"
 
 #: plugins/Ubuntu/Settings/Vpn/Openvpn/Editor.qml:547
 msgid "Server"
@@ -354,6 +352,8 @@ msgid ""
 "Your Wi-Fi/mobile provider can see when and how much you use the Internet, "
 "but not what for."
 msgstr ""
+"Wifi-/mobiilipalveluntarjoajasi näkee milloin ja kuinka paljon käytät "
+"internetiä, mutta ei näe mitä teet internetissä."
 
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/AllTrafficWithDns.qml:39
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/AllTrafficWithoutDns.qml:45
@@ -427,7 +427,7 @@ msgstr "Varmenne on lisätty mustalle listalle."
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/NoCert.qml:33
 msgid ""
 "It does not provide a certificate. The VPN provider could be impersonated."
-msgstr ""
+msgstr "Ei tarjoa varmennetta. Jokin taho voi esiintyä VPN-palveluntarjoajana."
 
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/NotInstalledWithoutRoutes.qml:27
 #: plugins/Ubuntu/Settings/Vpn/PreviewDialog/NotInstalledWithRoutes.qml:27
@@ -487,7 +487,7 @@ msgstr "VPN"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:96
 msgid "Change"
-msgstr "Muuta"
+msgstr "Vaihda"
 
 #: plugins/Ubuntu/Settings/Vpn/VpnPreviewDialog.qml:112
 msgid "Install"

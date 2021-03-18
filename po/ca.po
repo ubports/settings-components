@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-18 15:20+0000\n"
-"PO-Revision-Date: 2020-10-27 00:15+0000\n"
+"PO-Revision-Date: 2020-11-23 18:30+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports/"
 "settings-components/ca/>\n"
@@ -144,7 +144,7 @@ msgstr "Missatge"
 
 #: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:76
 msgid "Call back"
-msgstr "Retorna la telefonada"
+msgstr "Torna la trucada"
 
 #: plugins/Ubuntu/Settings/Menus/SnapDecisionMenu.qml:93
 #: plugins/Ubuntu/Settings/Menus/TextMessageMenu.qml:38
