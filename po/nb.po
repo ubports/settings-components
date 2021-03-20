@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: ubuntu-settings-components\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-18 15:20+0000\n"
-"PO-Revision-Date: 2021-03-17 07:03+0000\n"
-"Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
+"PO-Revision-Date: 2021-03-20 02:54+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports/settings-components/nb/>\n"
 "Language: nb\n"
@@ -63,7 +63,7 @@ msgstr "Du må sette et passord for å bruke fingeravtrykks-ID"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:223
 msgid "Set Passcode…"
-msgstr "Sett passord…"
+msgstr "Sett passord …"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:299
 msgid "Add fingerprint"
@@ -71,7 +71,7 @@ msgstr "Legg til fingeravtrykk"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:312
 msgid "Remove All…"
-msgstr "Fjern alle…"
+msgstr "Fjern alle …"
 
 #: plugins/Ubuntu/Settings/Fingerprint/Fingerprints.qml:327
 msgid "Are you sure you want to forget all stored fingerprints?"
