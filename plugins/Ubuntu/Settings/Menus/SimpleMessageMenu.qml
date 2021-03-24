@@ -20,7 +20,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import Ubuntu.Settings.Components 0.1 as USC
 
 BaseMenu {
@@ -37,7 +37,7 @@ BaseMenu {
     signal dismissed
 
     property alias footer: footerContainer.children
-    property real _animationDuration: UbuntuAnimation.FastDuration
+    property real _animationDuration: LomiriAnimation.FastDuration
 
     menuHeight: layout.height
     clip: leadingActions || trailingActions || heightAnimation.running

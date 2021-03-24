@@ -19,7 +19,7 @@
 import Biometryd 0.0
 import QtQuick 2.4
 import QtQuick.Layouts 1.1
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import Ubuntu.Settings.Fingerprint 0.1
 import "."
 
@@ -173,9 +173,9 @@ Page {
                     objectName: "fingerprintDefaultVisual"
                     anchors.centerIn: parent
 
-                    Behavior on opacity { UbuntuNumberAnimation {
-                        duration: UbuntuAnimation.SlowDuration
-                        easing: UbuntuAnimation.StandardEasing
+                    Behavior on opacity { LomiriNumberAnimation {
+                        duration: LomiriAnimation.SlowDuration
+                        easing: LomiriAnimation.StandardEasing
                     }}
                 }
 
@@ -199,8 +199,8 @@ Page {
                         running: false
                         from: 0
                         to: 360
-                        duration: UbuntuAnimation.SlowDuration
-                        easing: UbuntuAnimation.StandardEasing
+                        duration: LomiriAnimation.SlowDuration
+                        easing: LomiriAnimation.StandardEasing
                     }
 
                     NumberAnimation on thickness {
@@ -208,8 +208,8 @@ Page {
                         running: false
                         from: 0
                         to: units.dp(3)
-                        duration: UbuntuAnimation.SlowDuration
-                        easing: UbuntuAnimation.StandardEasing
+                        duration: LomiriAnimation.SlowDuration
+                        easing: LomiriAnimation.StandardEasing
                     }
 
                     Icon {
@@ -219,9 +219,9 @@ Page {
                         anchors.centerIn: parent
                     }
 
-                    Behavior on opacity { UbuntuNumberAnimation {
-                        duration: UbuntuAnimation.SlowDuration
-                        easing: UbuntuAnimation.StandardEasing
+                    Behavior on opacity { LomiriNumberAnimation {
+                        duration: LomiriAnimation.SlowDuration
+                        easing: LomiriAnimation.StandardEasing
                     }}
                 }
 
@@ -244,8 +244,8 @@ Page {
                         running: false
                         from: 0
                         to: 360
-                        duration: UbuntuAnimation.SlowDuration
-                        easing: UbuntuAnimation.StandardEasing
+                        duration: LomiriAnimation.SlowDuration
+                        easing: LomiriAnimation.StandardEasing
                     }
 
                     NumberAnimation on thickness {
@@ -253,8 +253,8 @@ Page {
                         running: false
                         from: 0
                         to: units.dp(3)
-                        duration: UbuntuAnimation.SlowDuration
-                        easing: UbuntuAnimation.StandardEasing
+                        duration: LomiriAnimation.SlowDuration
+                        easing: LomiriAnimation.StandardEasing
                     }
 
                     Icon {
@@ -264,9 +264,9 @@ Page {
                         anchors.centerIn: parent
                     }
 
-                    Behavior on opacity { UbuntuNumberAnimation {
-                        duration: UbuntuAnimation.SlowDuration
-                        easing: UbuntuAnimation.StandardEasing
+                    Behavior on opacity { LomiriNumberAnimation {
+                        duration: LomiriAnimation.SlowDuration
+                        easing: LomiriAnimation.StandardEasing
                     }}
                 }
 
@@ -315,11 +315,11 @@ Page {
             fontSize: "large"
             color: theme.palette.normal.backgroundTertiaryText
 
-            Behavior on opacity { UbuntuNumberAnimation {} }
+            Behavior on opacity { LomiriNumberAnimation {} }
             Behavior on progress {
                 NumberAnimation {
-                    duration: UbuntuAnimation.SlowDuration
-                    easing: UbuntuAnimation.StandardEasing
+                    duration: LomiriAnimation.SlowDuration
+                    easing: LomiriAnimation.StandardEasing
                 }
             }
         }

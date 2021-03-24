@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 ShaderEffect {
     id: segmentRenderer
@@ -86,8 +86,8 @@ ShaderEffect {
                     property: "progress"
                     from: 0.0
                     to: 1.0
-                    duration: UbuntuAnimation.SleepyDuration
-                    easing: UbuntuAnimation.StandardEasing
+                    duration: LomiriAnimation.SleepyDuration
+                    easing: LomiriAnimation.StandardEasing
                 }
             }
         }

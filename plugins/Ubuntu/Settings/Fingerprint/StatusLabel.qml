@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Item {
     id: root
@@ -62,8 +62,8 @@ Item {
         id: outAnim
 
         alwaysRunToEnd: true
-        duration: UbuntuAnimation.FastDuration
-        easing: UbuntuAnimation.StandardEasing
+        duration: LomiriAnimation.FastDuration
+        easing: LomiriAnimation.StandardEasing
         onStarted: root.slideStarted()
         property: "x"
         target: label
@@ -74,8 +74,8 @@ Item {
         id: inAnim
 
         alwaysRunToEnd: true
-        duration: UbuntuAnimation.FastDuration
-        easing: UbuntuAnimation.StandardEasing
+        duration: LomiriAnimation.FastDuration
+        easing: LomiriAnimation.StandardEasing
         onStopped: root.slideCompleted()
         property: "x"
         target: label
