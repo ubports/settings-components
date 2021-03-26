@@ -334,6 +334,8 @@ Item {
             var messageButton = findChild(messageMenuSelected, "messageButton");
             verify(messageButton !== undefined, "Message button not found");
             waitForRendering(messageButton)
+            // FIXME: somehow the next mouseClick() requires `wait(0)` to be reliable.
+            wait(0);
             mouseClick(messageButton, messageButton.width / 2, messageButton.height / 2);
 
             mouseClick(replyText, replyText.width / 2, replyText.height / 2);
