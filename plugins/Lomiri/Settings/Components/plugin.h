@@ -14,12 +14,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UBUNTUSETTINGSCOMPONENTS_PLUGIN_H
-#define UBUNTUSETTINGSCOMPONENTS_PLUGIN_H
+#ifndef LOMIRISETTINGSCOMPONENTS_PLUGIN_H
+#define LOMIRISETTINGSCOMPONENTS_PLUGIN_H
 
 #include <QtQml/QQmlExtensionPlugin>
 
-class UbuntuSettingsComponentsPlugin : public QQmlExtensionPlugin
+class LomiriSettingsComponentsPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
     Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface")
@@ -27,4 +27,4 @@ public:
     void registerTypes(const char *uri);
 };
 
-#endif // UBUNTUSETTINGSCOMPONENTS_PLUGIN_H
+#endif // LOMIRISETTINGSCOMPONENTS_PLUGIN_H

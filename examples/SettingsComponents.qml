@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import Lomiri.Components 1.3
-import Ubuntu.Settings.Components 0.1
+import Lomiri.Settings.Components 0.1
 import Ubuntu.Settings.Menus 0.1
 
 MainView {

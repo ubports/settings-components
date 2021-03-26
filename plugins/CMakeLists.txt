@@ -6,3 +6,4 @@ macro(add_usc_plugin PLUGIN VERSION PATH)
 endmacro()
 
 add_subdirectory(Ubuntu)
+add_subdirectory(Lomiri)

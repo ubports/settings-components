@@ -33,7 +33,7 @@ public:
     Q_INVOKABLE QString formattedWeekNumber(const QDate &date) const { return QString("%1").arg(date.weekNumber(), 2, 10, QChar('0')); }
 };
 
-void UbuntuSettingsComponentsPlugin::registerTypes(const char *uri)
+void LomiriSettingsComponentsPlugin::registerTypes(const char *uri)
 {
     qmlRegisterType<ServerPropertySynchroniser>(uri, 0, 1, "ServerPropertySynchroniser");
     qmlRegisterSingletonType<QtDateFunctions>(uri, 0, 1, "QtDateFunctions",
