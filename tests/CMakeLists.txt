@@ -32,6 +32,7 @@ macro(usc_parse_arguments)
         UNITY_TESTING=1
         LANGUAGE=C
         LC_ALL=C.UTF-8
+        UITK_ICON_THEME=suru
     )
 endmacro()
 
