@@ -15,25 +15,23 @@
  *
  * Authored by Jonas G. Drange <jonas.drange@canonical.com>
  */
-#include <unistd.h>
-#include <sys/types.h>
-#include <QProcessEnvironment>
 
-#include "ubuntusettingsfingerprint.h"
+#ifndef LOMIRISETTINGSFINGERPRINT_H
+#define LOMIRISETTINGSFINGERPRINT_H
 
-UbuntuSettingsFingerprint::UbuntuSettingsFingerprint(QObject* parent)
-    : QObject(parent)
+#include <QObject>
+
+class LomiriSettingsFingerprint : public QObject
 {
-}
+    Q_OBJECT
+public:
+    explicit LomiriSettingsFingerprint(QObject* parent = 0);
 
-qlonglong UbuntuSettingsFingerprint::uid() const
-{
-    return qlonglong(getuid());
-}
+    Q_PROPERTY(qlonglong uid READ uid CONSTANT)
+    Q_PROPERTY(bool debug READ debug CONSTANT)
 
-bool UbuntuSettingsFingerprint::debug() const
-{
-    return QProcessEnvironment::systemEnvironment().contains(
-        QLatin1String("USC_FINGERPRINT_DEBUG")
-    );
-}
+    qlonglong uid() const;
+    bool debug() const;
+};
+
+#endif // LOMIRISETTINGSFINGERPRINT_H

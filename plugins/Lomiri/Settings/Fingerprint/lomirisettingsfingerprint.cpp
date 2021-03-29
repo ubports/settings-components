@@ -12,24 +12,28 @@
  *
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Authored by Jonas G. Drange <jonas.drange@canonical.com>
  */
+#include <unistd.h>
+#include <sys/types.h>
+#include <QProcessEnvironment>
 
-#include "plugin.h"
-#include "ubuntusettingsfingerprint.h"
+#include "lomirisettingsfingerprint.h"
 
-#include <QtQml/qqml.h>
-
-static QObject* fp_singletonprovider(QQmlEngine *engine, QJSEngine *scriptEngine)
+LomiriSettingsFingerprint::LomiriSettingsFingerprint(QObject* parent)
+    : QObject(parent)
 {
-    Q_UNUSED(engine)
-    Q_UNUSED(scriptEngine)
-
-    return new UbuntuSettingsFingerprint;
 }
 
-void UbuntuSettingsFingerprintPlugin::registerTypes(const char *uri)
+qlonglong LomiriSettingsFingerprint::uid() const
 {
-    qmlRegisterSingletonType<UbuntuSettingsFingerprint>(
-        uri, 0, 1, "UbuntuSettingsFingerprint", fp_singletonprovider
+    return qlonglong(getuid());
+}
+
+bool LomiriSettingsFingerprint::debug() const
+{
+    return QProcessEnvironment::systemEnvironment().contains(
+        QLatin1String("USC_FINGERPRINT_DEBUG")
     );
 }

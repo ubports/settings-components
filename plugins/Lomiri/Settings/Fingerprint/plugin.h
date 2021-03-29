@@ -12,26 +12,19 @@
  *
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * Authored by Jonas G. Drange <jonas.drange@canonical.com>
  */
 
-#ifndef UBUNTUSETTINGSFINGERPRINT_H
-#define UBUNTUSETTINGSFINGERPRINT_H
+#ifndef LOMIRISETTINGSFINGERPRINT_PLUGIN_H
+#define LOMIRISETTINGSFINGERPRINT_PLUGIN_H
 
-#include <QObject>
+#include <QtQml/QQmlExtensionPlugin>
 
-class UbuntuSettingsFingerprint : public QObject
+class LomiriSettingsFingerprintPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
+    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface")
 public:
-    explicit UbuntuSettingsFingerprint(QObject* parent = 0);
-
-    Q_PROPERTY(qlonglong uid READ uid CONSTANT)
-    Q_PROPERTY(bool debug READ debug CONSTANT)
-
-    qlonglong uid() const;
-    bool debug() const;
+    void registerTypes(const char *uri);
 };
 
-#endif // UBUNTUSETTINGSFINGERPRINT_H
+#endif // LOMIRISETTINGSFINGERPRINT_PLUGIN_H

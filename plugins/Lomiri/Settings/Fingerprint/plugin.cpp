@@ -14,17 +14,22 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UBUNTUSETTINGSFINGERPRINT_PLUGIN_H
-#define UBUNTUSETTINGSFINGERPRINT_PLUGIN_H
+#include "plugin.h"
+#include "lomirisettingsfingerprint.h"
 
-#include <QtQml/QQmlExtensionPlugin>
+#include <QtQml/qqml.h>
 
-class UbuntuSettingsFingerprintPlugin : public QQmlExtensionPlugin
+static QObject* fp_singletonprovider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
-    Q_OBJECT
-    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface")
-public:
-    void registerTypes(const char *uri);
-};
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
 
-#endif // UBUNTUSETTINGSFINGERPRINT_PLUGIN_H
+    return new LomiriSettingsFingerprint;
+}
+
+void LomiriSettingsFingerprintPlugin::registerTypes(const char *uri)
+{
+    qmlRegisterSingletonType<LomiriSettingsFingerprint>(
+        uri, 0, 1, "LomiriSettingsFingerprint", fp_singletonprovider
+    );
+}

@@ -1,5 +1,5 @@
-module Ubuntu.Settings.Fingerprint
-plugin UbuntuSettingsFingerprintQml
+module Lomiri.Settings.Fingerprint
+plugin LomiriSettingsFingerprintQml
 
 Fingerprint 0.1 Fingerprint.qml
 Fingerprints 0.1 Fingerprints.qml

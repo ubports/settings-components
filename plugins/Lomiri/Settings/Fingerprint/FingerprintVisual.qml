@@ -18,7 +18,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Settings.Fingerprint 0.1
+import Lomiri.Settings.Fingerprint 0.1
 import "."
 
 SegmentedImage {
@@ -59,7 +59,7 @@ SegmentedImage {
         model: segmentedImage.masks
 
         Rectangle {
-            visible: UbuntuSettingsFingerprint.debug
+            visible: LomiriSettingsFingerprint.debug
             color: "red"
             opacity: 0.25
             x: modelData.x * segmentedImage.implicitWidth

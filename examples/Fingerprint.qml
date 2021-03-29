@@ -22,7 +22,7 @@ import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3
 import Lomiri.Components.ListItems 1.3 as ListItems
 import Lomiri.Settings.Components 0.1
-import Ubuntu.Settings.Fingerprint 0.1
+import Lomiri.Settings.Fingerprint 0.1
 
 MainView {
     width: units.gu(50)

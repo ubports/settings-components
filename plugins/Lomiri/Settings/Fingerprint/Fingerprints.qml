@@ -22,7 +22,7 @@ import Biometryd 0.0
 import GSettings 1.0
 import Lomiri.Components 1.3
 import Lomiri.Components.Popups 1.3
-import Ubuntu.Settings.Fingerprint 0.1
+import Lomiri.Settings.Fingerprint 0.1
 
 Page {
     id: root
@@ -465,7 +465,7 @@ Page {
 
     User {
         id: user
-        uid: UbuntuSettingsFingerprint.uid
+        uid: LomiriSettingsFingerprint.uid
     }
 
     GSettings {

@@ -20,7 +20,7 @@ import Biometryd 0.0
 import QtQuick 2.4
 import QtQuick.Layouts 1.1
 import Lomiri.Components 1.3
-import Ubuntu.Settings.Fingerprint 0.1
+import Lomiri.Settings.Fingerprint 0.1
 import "."
 
 Page {
