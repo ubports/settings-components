@@ -19,4 +19,4 @@ target_link_libraries(MockBiometryd
     Qt5::Quick
 )
 
-add_usc_mock(Biometryd 0.0 Biometryd TARGETS MockBiometryd)
+add_lsc_mock(Biometryd 0.0 Biometryd TARGETS MockBiometryd)

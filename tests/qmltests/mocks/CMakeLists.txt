@@ -1,13 +1,13 @@
 find_package(QmlPlugins)
 
-# Set up and optionally install a mock plugin for ubuntu-settings-components.
+# Set up and optionally install a mock plugin for lomiri-settings-components.
 #
-# add_usc_mock(plugin version path
+# add_lsc_mock(plugin version path
 #     [PREFIX string]  # Install the plugin to the specified prefix under unity8 private plugin directory
 #     [...]            # See export_qmlfiles and export_qmlplugin documentation for more options
 # )
 
-macro(add_usc_mock PLUGIN VERSION PATH)
+macro(add_lsc_mock PLUGIN VERSION PATH)
     set(single PREFIX)
     cmake_parse_arguments(MOCK "" "${single}" "" ${ARGN})
 

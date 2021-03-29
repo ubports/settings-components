@@ -13,4 +13,4 @@ target_link_libraries(LomiriSettingsComponentsQml
     Qt5::Quick
 )
 
-add_usc_plugin(Lomiri.Settings.Components 0.1 Lomiri/Settings/Components TARGETS LomiriSettingsComponentsQml)
+add_lsc_plugin(Lomiri.Settings.Components 0.1 Lomiri/Settings/Components TARGETS LomiriSettingsComponentsQml)

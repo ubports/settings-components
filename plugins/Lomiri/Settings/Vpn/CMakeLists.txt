@@ -20,4 +20,4 @@ add_library(LomiriSettingsVpn MODULE
 
 target_link_libraries(LomiriSettingsVpn Qt5::Core Qt5::Qml Qt5::Quick)
 
-add_usc_plugin(Lomiri.Settings.Vpn 0.1 Lomiri/Settings/Vpn TARGETS LomiriSettingsVpn)
+add_lsc_plugin(Lomiri.Settings.Vpn 0.1 Lomiri/Settings/Vpn TARGETS LomiriSettingsVpn)

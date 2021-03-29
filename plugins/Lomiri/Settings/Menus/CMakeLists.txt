@@ -20,4 +20,4 @@ target_link_libraries(LomiriSettingsMenusQml
     ${LIBUPSTART_LIBRARIES}
 )
 
-add_usc_plugin(Lomiri.Settings.Menus 0.1 Lomiri/Settings/Menus TARGETS LomiriSettingsMenusQml)
+add_lsc_plugin(Lomiri.Settings.Menus 0.1 Lomiri/Settings/Menus TARGETS LomiriSettingsMenusQml)
