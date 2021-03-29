@@ -34,6 +34,6 @@ qlonglong LomiriSettingsFingerprint::uid() const
 bool LomiriSettingsFingerprint::debug() const
 {
     return QProcessEnvironment::systemEnvironment().contains(
-        QLatin1String("USC_FINGERPRINT_DEBUG")
+        QLatin1String("LSC_FINGERPRINT_DEBUG")
     );
 }
