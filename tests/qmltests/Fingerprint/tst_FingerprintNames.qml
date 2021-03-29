@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import QtTest 1.0
-import Ubuntu.Test 0.1
+import Lomiri.Settings.Test 0.1
 import Lomiri.Settings.Fingerprint 0.1
 import Lomiri.Components 1.3
 import Biometryd 0.0
@@ -59,7 +59,7 @@ Item {
         }
     }
 
-    UbuntuTestCase {
+    LSTTestCase {
         name: "FingerprintNames"
         when: windowShown
 
@@ -284,7 +284,7 @@ Item {
         signalName: "done"
     }
 
-    UbuntuTestCase {
+    LSTTestCase {
         name: "TestTemplate"
         when: windowShown
 

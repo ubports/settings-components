@@ -17,7 +17,7 @@
 import QtQuick 2.4
 import QtTest 1.0
 import Lomiri.Components 1.3
-import Ubuntu.Test 0.1 as UT
+import Lomiri.Settings.Test 0.1 as LST
 
 TestCase {
     id: testCase
@@ -218,7 +218,7 @@ TestCase {
     }
 
     function touchEvent() {
-        return UT.Util.touchEvent()
+        return LST.Util.touchEvent()
     }
 
     // speed is in pixels/second

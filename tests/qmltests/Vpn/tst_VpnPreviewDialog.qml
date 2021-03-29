@@ -19,7 +19,7 @@
 import QtQuick 2.4
 import QtTest 1.0
 import Lomiri.Components.Popups 1.3
-import Ubuntu.Test 0.1
+import Lomiri.Settings.Test 0.1
 import Lomiri.Settings.Vpn 0.1
 
 Item {
@@ -38,7 +38,7 @@ Item {
 
     // In these tests, all CA certificates are going to be okay due to
     // NO_SSL_CERTIFICATE_CHECK env variable being set to 1.
-    UbuntuTestCase {
+    LSTTestCase {
         name: "VpnPreviewDialog"
         when: windowShown
 

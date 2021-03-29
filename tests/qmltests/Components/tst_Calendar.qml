@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import QtTest 1.0
-import Ubuntu.Test 0.1
+import Lomiri.Settings.Test 0.1
 import Lomiri.Settings.Components 0.1
 import Lomiri.Components 1.3
 
@@ -49,7 +49,7 @@ Rectangle {
         }
     }
 
-    UbuntuTestCase {
+    LSTTestCase {
         name: "Calendar"
         when: windowShown
 

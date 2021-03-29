@@ -41,7 +41,7 @@ endmacro()
 function(add_usc_qmltest PATH COMPONENT_NAME)
     usc_parse_arguments(${ARGN})
     add_qml_test(${PATH} ${COMPONENT_NAME}
-        DEPENDS UbuntuTest
+        DEPENDS LomiriSettingsTest
         IMPORT_PATHS ${USC_IMPORT_PATHS}
         TARGETS uitests
         ${ARGN}

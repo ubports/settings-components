@@ -15,12 +15,12 @@
  */
 
 
-#ifndef UBUNTU_TEST_PLUGIN_H
-#define UBUNTU_TEST_PLUGIN_H
+#ifndef LOMIRI_SETTINGS_TEST_PLUGIN_H
+#define LOMIRI_SETTINGS_TEST_PLUGIN_H
 
 #include <QQmlExtensionPlugin>
 
-class UbuntuTestPlugin : public QQmlExtensionPlugin
+class LomiriSettingsTestPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
     Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface")
@@ -30,4 +30,4 @@ public:
     void initializeEngine(QQmlEngine *engine, const char *uri);
 };
 
-#endif // UBUNTU_TEST_PLUGIN_H
+#endif // LOMIRI_SETTINGS_TEST_PLUGIN_H

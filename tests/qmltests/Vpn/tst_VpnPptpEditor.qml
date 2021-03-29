@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import QtTest 1.0
-import Ubuntu.Test 0.1
+import Lomiri.Settings.Test 0.1
 import Lomiri.Settings.Vpn 0.1
 
 Item {
@@ -30,7 +30,7 @@ Item {
         id: vpnEditor
     }
 
-    UbuntuTestCase {
+    LSTTestCase {
         name: "VpnPptpEditor"
         when: windowShown
 

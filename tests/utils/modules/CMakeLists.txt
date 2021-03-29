@@ -1,3 +1,3 @@
 find_package(QmlPlugins)
 
-add_subdirectory(Ubuntu)
+add_subdirectory(Lomiri/Settings/Test)

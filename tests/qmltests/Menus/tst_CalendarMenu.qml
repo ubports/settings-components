@@ -18,7 +18,7 @@
 
 import QtQuick 2.4
 import QtTest 1.0
-import Ubuntu.Test 0.1
+import Lomiri.Settings.Test 0.1
 import Lomiri.Settings.Menus 0.1
 
 Item {
@@ -50,7 +50,7 @@ Item {
         }
     }
 
-    UbuntuTestCase {
+    LSTTestCase {
         name: "CalendarMenu"
         when: windowShown
 

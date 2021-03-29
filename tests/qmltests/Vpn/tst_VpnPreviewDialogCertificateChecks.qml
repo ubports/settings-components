@@ -19,7 +19,7 @@
 import QtQuick 2.4
 import QtTest 1.0
 import Lomiri.Components.Popups 1.3
-import Ubuntu.Test 0.1
+import Lomiri.Settings.Test 0.1
 import Lomiri.Settings.Vpn 0.1
 
 Item {
@@ -37,7 +37,7 @@ Item {
     }
 
     // In these tests, all CA certificates are going to be checked.
-    UbuntuTestCase {
+    LSTTestCase {
         name: "VpnPreviewDialogCertificateChecks"
         when: windowShown
 

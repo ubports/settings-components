@@ -20,7 +20,7 @@ import QtQuick 2.4
 import QtTest 1.0
 import Lomiri.Components 1.3
 import Lomiri.Settings.Fingerprint 0.1
-import Ubuntu.Test 0.1
+import Lomiri.Settings.Test 0.1
 import Biometryd 0.0
 
 Item {
@@ -61,7 +61,7 @@ Item {
         signalName: "failed"
     }
 
-    UbuntuTestCase {
+    LSTTestCase {
         name: "FingerprintSetup"
         when: windowShown
 
