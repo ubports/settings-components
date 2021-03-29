@@ -14,14 +14,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UBUNTUSETTINGSMENUSTYPES_H
-#define UBUNTUSETTINGSMENUSTYPES_H
+#ifndef LOMIRISETTINGSMENUSTYPES_H
+#define LOMIRISETTINGSMENUSTYPES_H
 
 #include "pluginglobal.h"
 
 #include <QObject>
 
-class UBUNTUSETTINGSCOMPONENTS_EXPORT TransferState : public QObject
+class LOMIRISETTINGSCOMPONENTS_EXPORT TransferState : public QObject
 {
     Q_OBJECT
     Q_ENUMS(TransferStates)
@@ -40,4 +40,4 @@ public:
     TransferState(QObject* parent = 0): QObject(parent) {}
 };
 
-#endif // UBUNTUSETTINGSMENUSTYPES_H
+#endif // LOMIRISETTINGSMENUSTYPES_H

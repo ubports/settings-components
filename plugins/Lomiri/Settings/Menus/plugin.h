@@ -14,14 +14,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// local
-#include "plugin.h"
-#include "types.h"
+#ifndef LOMIRISETTINGSMENUS_PLUGIN_H
+#define LOMIRISETTINGSMENUS_PLUGIN_H
 
-// Qt
-#include <QtQml/qqml.h>
+#include <QtQml/QQmlExtensionPlugin>
 
-void UbuntuSettingsMenusPlugin::registerTypes(const char *uri)
+class LomiriSettingsMenusPlugin : public QQmlExtensionPlugin
 {
-    qmlRegisterUncreatableType<TransferState>(uri, 0, 1, "TransferState", "Can't create TransferState class");
-}
+    Q_OBJECT
+    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface")
+public:
+    void registerTypes(const char *uri);
+};
+
+#endif // LOMIRISETTINGSMENUS_PLUGIN_H

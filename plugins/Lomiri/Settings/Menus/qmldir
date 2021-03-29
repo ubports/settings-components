@@ -1,5 +1,5 @@
-module Ubuntu.Settings.Menus
-plugin UbuntuSettingsMenusQml
+module Lomiri.Settings.Menus
+plugin LomiriSettingsMenusQml
 typeinfo Menus.qmltypes
 
 AccessPointMenu 0.1 AccessPointMenu.qml

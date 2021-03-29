@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Canonical, Ltd.
+ * Copyright 2016 Canonical Ltd.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -12,12 +12,21 @@
  *
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Author: Marco Trevisan <marco.trevisan@canonical.com>
  */
 
-#include <QtCore/QtGlobal>
+import QtQuick 2.4
+import Lomiri.Components 1.3
+import Lomiri.Settings.Menus.Style 0.1
 
-#if defined(UBUNTUSETTINGSCOMPONENTS_LIBRARY)
-#  define UBUNTUSETTINGSCOMPONENTS_EXPORT Q_DECL_EXPORT
-#else
-#  define UBUNTUSETTINGSCOMPONENTS_EXPORT Q_DECL_IMPORT
-#endif
+SlotsLayout {
+    property BaseStyle style
+
+    padding {
+        top: style.padding.top
+        bottom: style.padding.bottom
+        leading: style.padding.leading
+        trailing: style.padding.trailing
+    }
+}

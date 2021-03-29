@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Canonical Ltd.
+ * Copyright (C) 2014 Canonical, Ltd.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -12,21 +12,16 @@
  *
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- * Author: Marco Trevisan <marco.trevisan@canonical.com>
  */
 
-import QtQuick 2.4
-import Lomiri.Components 1.3
-import Ubuntu.Settings.Menus.Style 0.1
+// local
+#include "plugin.h"
+#include "types.h"
 
-SlotsLayout {
-    property BaseStyle style
+// Qt
+#include <QtQml/qqml.h>
 
-    padding {
-        top: style.padding.top
-        bottom: style.padding.bottom
-        leading: style.padding.leading
-        trailing: style.padding.trailing
-    }
+void LomiriSettingsMenusPlugin::registerTypes(const char *uri)
+{
+    qmlRegisterUncreatableType<TransferState>(uri, 0, 1, "TransferState", "Can't create TransferState class");
 }

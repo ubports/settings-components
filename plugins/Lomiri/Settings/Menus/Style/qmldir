@@ -1,4 +1,4 @@
-module Ubuntu.Settings.Menus.Style
+module Lomiri.Settings.Menus.Style
 
 BaseStyle 0.1 BaseStyle.qml
 singleton PointerStyle 0.1 PointerStyle.qml
