@@ -228,7 +228,7 @@ Item {
 
         function test_enrollmentSucceeded() {
             var obs = getEnrollmentObserver();
-            var targetFingerprintName = i18n.dtr("ubuntu-settings-components", "Finger %1").arg(1);
+            var targetFingerprintName = i18n.dtr("lomiri-settings-components", "Finger %1").arg(1);
             spy.signalName = "succeeded";
             spy.target = obs;
             obs.mockEnroll("tmplId", "");

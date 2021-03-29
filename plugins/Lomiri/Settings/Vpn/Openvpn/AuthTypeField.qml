@@ -26,7 +26,7 @@ Column {
     signal authTypeRequested(int index)
 
     Label {
-        text: i18n.dtr("ubuntu-settings-components", "Authentication type:")
+        text: i18n.dtr("lomiri-settings-components", "Authentication type:")
         enabled: parent.enabled
         font.bold: true
         color: theme.palette.normal.baseText
@@ -39,10 +39,10 @@ Column {
         objectName: "vpnTypeField"
         enabled: parent.enabled
         model: [
-            i18n.dtr("ubuntu-settings-components", "Certificates (TLS)"),
-            i18n.dtr("ubuntu-settings-components", "Password"),
-            i18n.dtr("ubuntu-settings-components", "Password with certificates (TLS)"),
-            i18n.dtr("ubuntu-settings-components", "Static key")
+            i18n.dtr("lomiri-settings-components", "Certificates (TLS)"),
+            i18n.dtr("lomiri-settings-components", "Password"),
+            i18n.dtr("lomiri-settings-components", "Password with certificates (TLS)"),
+            i18n.dtr("lomiri-settings-components", "Static key")
         ]
         expanded: false
         onDelegateClicked: authTypeRequested(index)

@@ -29,7 +29,7 @@ Page {
     objectName: "fingerprintPage"
 
     header: PageHeader {
-        title: i18n.dtr("ubuntu-settings-components", "Fingerprint ID")
+        title: i18n.dtr("lomiri-settings-components", "Fingerprint ID")
         flickable: content
     }
 
@@ -89,7 +89,7 @@ Page {
 
         var i = 0;
         do {
-            newName = i18n.dtr("ubuntu-settings-components",
+            newName = i18n.dtr("lomiri-settings-components",
                                "Finger %1").arg(++i); // Start at 1
         } while (currentNames.indexOf(newName) >= 0);
         return newName;
@@ -208,18 +208,18 @@ Page {
                     ListItemLayout {
                         id: setPcodeLayout
                         title.text: i18n.dtr(
-                            "ubuntu-settings-components",
+                            "lomiri-settings-components",
                             "Passcode required"
                         )
                         subtitle.text: i18n.dtr(
-                            "ubuntu-settings-components",
+                            "lomiri-settings-components",
                             "You must set a passcode to use fingerprint ID"
                         )
                         Button {
                             objectName: "fingerprintSetPasscodeButton"
                             onClicked: root.requestPasscode()
                             text: i18n.dtr(
-                                "ubuntu-settings-components",
+                                "lomiri-settings-components",
                                 "Set Passcode…"
                             )
                         }
@@ -295,7 +295,7 @@ Page {
                         id: addFpLayout
                         objectName: "fingerprintAddListItemLayout"
                         title.text: i18n.dtr(
-                            "ubuntu-settings-components",
+                            "lomiri-settings-components",
                             "Add fingerprint"
                         )
 
@@ -308,7 +308,7 @@ Page {
                     enabled: fingerprintsList.model.length > 0
                     objectName: "fingerprintRemoveAllButton"
                     onClicked: _diag = PopupUtils.open(removeAllAlert)
-                    text: i18n.dtr("ubuntu-settings-components",
+                    text: i18n.dtr("lomiri-settings-components",
                                    "Remove All…")
                 }
             }
@@ -323,7 +323,7 @@ Page {
 
             objectName: "fingerprintRemoveAllDialog"
             text: i18n.dtr(
-                "ubuntu-settings-components",
+                "lomiri-settings-components",
                 "Are you sure you want to forget all stored fingerprints?"
             )
 
@@ -333,14 +333,14 @@ Page {
 
                 Button {
                     onClicked: PopupUtils.close(removeAllAlertDialog)
-                    text: i18n.dtr("ubuntu-settings-components", "Cancel")
+                    text: i18n.dtr("lomiri-settings-components", "Cancel")
                     Layout.fillWidth: true
                 }
 
                 Button {
                     objectName: "fingerprintRemoveAllConfirmationButton"
                     onClicked: root.clear()
-                    text: i18n.dtr("ubuntu-settings-components", "Remove")
+                    text: i18n.dtr("lomiri-settings-components", "Remove")
                     Layout.fillWidth: true
                 }
             }
@@ -353,13 +353,13 @@ Page {
         Dialog {
             id: fingerprintReaderBrokenDialog
             objectName: "fingerprintReaderBrokenDialog"
-            text: i18n.dtr("ubuntu-settings-components",
+            text: i18n.dtr("lomiri-settings-components",
                            "Sorry, the reader doesn’t seem to be working.")
 
             Button {
                 objectName: "fingerprintReaderBrokenDialogOK"
                 onClicked: PopupUtils.close(fingerprintReaderBrokenDialog)
-                text: i18n.dtr("ubuntu-settings-components", "OK")
+                text: i18n.dtr("lomiri-settings-components", "OK")
             }
         }
     }

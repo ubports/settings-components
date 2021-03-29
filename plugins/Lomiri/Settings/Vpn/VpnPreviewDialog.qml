@@ -50,12 +50,12 @@ Dialog {
             case 0: // Openvpn
                 source = "Openvpn/Preview.qml";
                 // TRANSLATORS: %1 is the hostname of a VPN connection
-                if (conn.remote) title = i18n.dtr("ubuntu-settings-components", "VPN “%1”").arg(conn.remote);
+                if (conn.remote) title = i18n.dtr("lomiri-settings-components", "VPN “%1”").arg(conn.remote);
                 break;
             case 1: // PPTP
                 source = "Pptp/Preview.qml";
                 // TRANSLATORS: %1 is the hostname of a VPN connection
-                if (conn.gateway) title = i18n.dtr("ubuntu-settings-components", "VPN “%1”").arg(conn.gateway);
+                if (conn.gateway) title = i18n.dtr("lomiri-settings-components", "VPN “%1”").arg(conn.gateway);
                 break;
             default: // Unknown
                 source = "";
@@ -66,7 +66,7 @@ Dialog {
             connection: getConnection(),
             installed: isInstalled()
         });
-        if (!title) title = i18n.dtr("ubuntu-settings-components", "VPN");
+        if (!title) title = i18n.dtr("lomiri-settings-components", "VPN");
     }
 
     Loader {
@@ -81,7 +81,7 @@ Dialog {
             objectName: "vpnPreviewRemoveButton"
             Layout.fillWidth: true
             visible: connection !== null
-            text: i18n.dtr("ubuntu-settings-components", "Remove")
+            text: i18n.dtr("lomiri-settings-components", "Remove")
             onClicked: {
                 connection.remove();
                 PopupUtils.close(preview);
@@ -92,7 +92,7 @@ Dialog {
             objectName: "vpnPreviewChangeButton"
             Layout.fillWidth: true
             visible: connection !== null
-            text: i18n.dtr("ubuntu-settings-components", "Change")
+            text: i18n.dtr("lomiri-settings-components", "Change")
             color: theme.palette.normal.positive
             onClicked: changeClicked(connection)
         }
@@ -101,7 +101,7 @@ Dialog {
             objectName: "vpnPreviewCancelButton"
             Layout.fillWidth: true
             visible: configuration !== null
-            text: i18n.dtr("ubuntu-settings-components", "Cancel")
+            text: i18n.dtr("lomiri-settings-components", "Cancel")
             onClicked: PopupUtils.close(preview)
         }
 
@@ -109,7 +109,7 @@ Dialog {
             objectName: "vpnPreviewInstallButton"
             Layout.fillWidth: true
             visible: configuration !== null
-            text: i18n.dtr("ubuntu-settings-components", "Install")
+            text: i18n.dtr("lomiri-settings-components", "Install")
             color: theme.palette.normal.positive
             onClicked: installClicked(configuration)
         }

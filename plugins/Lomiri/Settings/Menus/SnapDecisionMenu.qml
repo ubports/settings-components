@@ -61,7 +61,7 @@ SimpleMessageMenu {
 
                     Button { id:foobutt
                         objectName: "messageButton"
-                        text: i18n.dtr("ubuntu-settings-components", "Message")
+                        text: i18n.dtr("lomiri-settings-components", "Message")
 
                         onClicked: {
                             menu.replyExpanded = !menu.replyExpanded;
@@ -73,7 +73,7 @@ SimpleMessageMenu {
                     Button {
                         id: actionButton
                         objectName: "actionButton"
-                        text: i18n.dtr("ubuntu-settings-components", "Call back")
+                        text: i18n.dtr("lomiri-settings-components", "Call back")
                         color: enabled ? theme.palette.normal.positive : theme.palette.disabled.positive
 
                         onClicked: {
@@ -90,7 +90,7 @@ SimpleMessageMenu {
 
                 visible: false
                 activateEnabled: true
-                buttonText: i18n.dtr("ubuntu-settings-components", "Send")
+                buttonText: i18n.dtr("lomiri-settings-components", "Send")
 
                 onActivated: {
                     menu.replied(value);

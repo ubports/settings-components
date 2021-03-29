@@ -35,7 +35,7 @@ SimpleMessageMenu {
     footer: USC.ActionTextField {
         id: actionTextField
         activateEnabled: true
-        buttonText: i18n.dtr("ubuntu-settings-components", "Send")
+        buttonText: i18n.dtr("lomiri-settings-components", "Send")
         textFieldFocused: enabled ? menu.selected : false
 
         onActivated: {

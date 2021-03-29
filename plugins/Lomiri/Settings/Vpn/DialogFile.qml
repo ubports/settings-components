@@ -162,7 +162,7 @@ Dialog {
             Button {
                 objectName: "vpnFileCancel"
                 Layout.fillWidth: true
-                text: i18n.dtr("ubuntu-settings-components", "Cancel")
+                text: i18n.dtr("lomiri-settings-components", "Cancel")
                 onClicked: rejectFunc()
             }
 
@@ -170,7 +170,7 @@ Dialog {
                 objectName: "vpnFileAccept"
                 Layout.fillWidth: true
                 enabled: currentFilePath !== ""
-                text: i18n.dtr("ubuntu-settings-components", "Accept")
+                text: i18n.dtr("lomiri-settings-components", "Accept")
                 onClicked: acceptFunc()
                 color: theme.palette.normal.positive
             }

@@ -29,7 +29,7 @@ RowLayout {
     signal typeRequested(int index)
 
     Label {
-        text: i18n.dtr("ubuntu-settings-components", "Type:")
+        text: i18n.dtr("lomiri-settings-components", "Type:")
         enabled: parent.enabled
         font.bold: true
         color: theme.palette.normal.baseText

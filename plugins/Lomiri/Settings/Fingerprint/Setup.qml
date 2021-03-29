@@ -58,7 +58,7 @@ Page {
             name: "reading"
             StateChangeScript {
                 script: statusLabel.setText(
-                    i18n.dtr("ubuntu-settings-components",
+                    i18n.dtr("lomiri-settings-components",
                              "Tap your finger repeatedly on the reader.")
                 )
             }
@@ -75,7 +75,7 @@ Page {
             name: "longer"
             StateChangeScript {
                 script: statusLabel.setText(
-                    i18n.dtr("ubuntu-settings-components",
+                    i18n.dtr("lomiri-settings-components",
                              "Keep your finger on the reader for longer.")
                 )
             }
@@ -92,7 +92,7 @@ Page {
             }
             PropertyChanges {
                 target: cancelButton
-                text: i18n.dtr("ubuntu-settings-components", "Back");
+                text: i18n.dtr("lomiri-settings-components", "Back");
             }
             PropertyChanges {
                 target: doneButton
@@ -100,7 +100,7 @@ Page {
             }
             StateChangeScript {
                 script: statusLabel.setText(
-                    i18n.dtr("ubuntu-settings-components",
+                    i18n.dtr("lomiri-settings-components",
                              "Sorry, the reader doesn’t seem to be working."),
                     true // No animation
                 )
@@ -129,14 +129,14 @@ Page {
             }
             StateChangeScript {
                 script: statusLabel.setText(
-                    i18n.dtr("ubuntu-settings-components", "All done!"),
+                    i18n.dtr("lomiri-settings-components", "All done!"),
                     true // No animation
                 )
             }
             PropertyChanges {
                 target: doneButton
                 enabled: true
-                text: i18n.dtr("ubuntu-settings-components", "OK")
+                text: i18n.dtr("lomiri-settings-components", "OK")
             }
             StateChangeScript {
                 script: imageDone.start()
@@ -294,7 +294,7 @@ Page {
                 top: parent.top
                 topMargin: units.gu(5)
             }
-            initialText: i18n.dtr("ubuntu-settings-components",
+            initialText: i18n.dtr("lomiri-settings-components",
                                   "Swipe your finger over the reader.")
             objectName: "fingerprintStatusLabel"
         }
@@ -309,7 +309,7 @@ Page {
                 topMargin: units.gu(1.5)
                 horizontalCenter: parent.horizontalCenter
             }
-            text: i18n.dtr("ubuntu-settings-components", "%1%").arg((progress).toFixed());
+            text: i18n.dtr("lomiri-settings-components", "%1%").arg((progress).toFixed());
             opacity: 0
             horizontalAlignment: Text.AlignHCenter
             fontSize: "large"
@@ -353,7 +353,7 @@ Page {
                 Label {
                     id: cancelButtonText
                     anchors.verticalCenter: parent.verticalCenter
-                    text: i18n.dtr("ubuntu-settings-components", "Cancel")
+                    text: i18n.dtr("lomiri-settings-components", "Cancel")
                 }
             }
 
@@ -378,7 +378,7 @@ Page {
                         right: parent.right
                     }
                     font.bold: parent.enabled
-                    text: i18n.dtr("ubuntu-settings-components", "Next")
+                    text: i18n.dtr("lomiri-settings-components", "Next")
                 }
             }
         }

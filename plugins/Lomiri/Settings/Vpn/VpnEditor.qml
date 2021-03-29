@@ -22,7 +22,7 @@ import Lomiri.Components.ListItems 1.3 as ListItems
 Page {
     id: editor
     objectName: "vpnEditor"
-    title: i18n.dtr("ubuntu-settings-components", "Set up VPN")
+    title: i18n.dtr("lomiri-settings-components", "Set up VPN")
 
     property var connection
 
@@ -133,7 +133,7 @@ Page {
 
             Button {
                 objectName: "vpnEditorCancelButton"
-                text: i18n.dtr("ubuntu-settings-components", "Cancel")
+                text: i18n.dtr("lomiri-settings-components", "Cancel")
                 onClicked: {
                     if (editor.isNew) {
                         connection.remove();
@@ -146,7 +146,7 @@ Page {
             Button {
                 id: vpnEditorOkayButton
                 objectName: "vpnEditorOkayButton"
-                text: i18n.dtr("ubuntu-settings-components", "OK")
+                text: i18n.dtr("lomiri-settings-components", "OK")
                 onClicked: editor.commit()
                 Layout.fillWidth: true
                 enabled: editorLoader.item.changed && editorLoader.item.valid

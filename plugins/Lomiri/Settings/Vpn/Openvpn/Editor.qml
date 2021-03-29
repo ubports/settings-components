@@ -120,7 +120,7 @@ Column {
         anchors { left: parent.left; right: parent.right }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Server:")
+            text: i18n.dtr("lomiri-settings-components", "Server:")
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
@@ -134,7 +134,7 @@ Column {
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Port:")
+            text: i18n.dtr("lomiri-settings-components", "Port:")
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
@@ -184,7 +184,7 @@ Column {
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Use custom gateway port")
+            text: i18n.dtr("lomiri-settings-components", "Use custom gateway port")
             Layout.fillWidth: true
         }
     }
@@ -212,7 +212,7 @@ Column {
 
     RowLayout {
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Protocol:")
+            text: i18n.dtr("lomiri-settings-components", "Protocol:")
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
@@ -301,7 +301,7 @@ Column {
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
-            text: i18n.dtr("ubuntu-settings-components", "Username:")
+            text: i18n.dtr("lomiri-settings-components", "Username:")
         }
 
         TextField {
@@ -316,7 +316,7 @@ Column {
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
-            text: i18n.dtr("ubuntu-settings-components", "Password:")
+            text: i18n.dtr("lomiri-settings-components", "Password:")
         }
 
         TextField {
@@ -338,7 +338,7 @@ Column {
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
-            text: i18n.dtr("ubuntu-settings-components", "Client certificate:")
+            text: i18n.dtr("lomiri-settings-components", "Client certificate:")
         }
 
         FileSelector {
@@ -346,14 +346,14 @@ Column {
             id: certField
             objectName: "vpnOpenvpnCertField"
             path: connection.cert
-            chooseLabel: i18n.dtr("ubuntu-settings-components", "Choose Certificate…")
+            chooseLabel: i18n.dtr("lomiri-settings-components", "Choose Certificate…")
         }
 
         Label {
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
-            text: i18n.dtr("ubuntu-settings-components", "Private key:")
+            text: i18n.dtr("lomiri-settings-components", "Private key:")
         }
 
         FileSelector {
@@ -361,14 +361,14 @@ Column {
             id: keyField
             objectName: "vpnOpenvpnKeyField"
             path: connection.key
-            chooseLabel: i18n.dtr("ubuntu-settings-components", "Choose Key…")
+            chooseLabel: i18n.dtr("lomiri-settings-components", "Choose Key…")
         }
 
         Label {
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
-            text: i18n.dtr("ubuntu-settings-components", "Key password:")
+            text: i18n.dtr("lomiri-settings-components", "Key password:")
         }
 
         TextField {
@@ -385,7 +385,7 @@ Column {
         font.bold: true
         color: theme.palette.normal.baseText
         elide: Text.ElideRight
-        text: i18n.dtr("ubuntu-settings-components", "CA certificate:")
+        text: i18n.dtr("lomiri-settings-components", "CA certificate:")
     }
 
     FileSelector {
@@ -393,7 +393,7 @@ Column {
         objectName: "vpnOpenvpnCaField"
         anchors { left: parent.left; right: parent.right }
         path: connection.ca
-        chooseLabel: i18n.dtr("ubuntu-settings-components", "Choose Certificate…")
+        chooseLabel: i18n.dtr("lomiri-settings-components", "Choose Certificate…")
     }
 
     Column {
@@ -406,7 +406,7 @@ Column {
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
-            text: i18n.dtr("ubuntu-settings-components", "Static key:")
+            text: i18n.dtr("lomiri-settings-components", "Static key:")
         }
 
         FileSelector {
@@ -414,11 +414,11 @@ Column {
             anchors { left: parent.left; right: parent.right }
             objectName: "vpnOpenvpnStaticKeyField"
             path: connection.staticKey
-            chooseLabel: i18n.dtr("ubuntu-settings-components", "Choose Key…")
+            chooseLabel: i18n.dtr("lomiri-settings-components", "Choose Key…")
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Key direction:")
+            text: i18n.dtr("lomiri-settings-components", "Key direction:")
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
@@ -428,7 +428,7 @@ Column {
             id: staticKeyDirectionSelector
             objectName: "vpnOpenvpnStaticKeyDirectionSelector"
             model: [
-                i18n.dtr("ubuntu-settings-components", "None"),
+                i18n.dtr("lomiri-settings-components", "None"),
                 0,
                 1,
             ]
@@ -436,7 +436,7 @@ Column {
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Remote IP:")
+            text: i18n.dtr("lomiri-settings-components", "Remote IP:")
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
@@ -451,7 +451,7 @@ Column {
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Local IP:")
+            text: i18n.dtr("lomiri-settings-components", "Local IP:")
             font.bold: true
             color: theme.palette.normal.baseText
             elide: Text.ElideRight
@@ -476,7 +476,7 @@ Column {
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Use additional TLS authentication:")
+            text: i18n.dtr("lomiri-settings-components", "Use additional TLS authentication:")
             Layout.fillWidth: true
         }
     }
@@ -485,7 +485,7 @@ Column {
         font.bold: true
         color: theme.palette.normal.baseText
         elide: Text.ElideRight
-        text: i18n.dtr("ubuntu-settings-components", "TLS key:")
+        text: i18n.dtr("lomiri-settings-components", "TLS key:")
         visible: taSetToggle.checked
     }
 
@@ -494,12 +494,12 @@ Column {
         id: taField
         objectName: "vpnOpenvpnTaField"
         path: connection.ta
-        chooseLabel: i18n.dtr("ubuntu-settings-components", "Choose Key…")
+        chooseLabel: i18n.dtr("lomiri-settings-components", "Choose Key…")
         visible: taSetToggle.checked
     }
 
     Label {
-        text: i18n.dtr("ubuntu-settings-components", "Key direction:")
+        text: i18n.dtr("lomiri-settings-components", "Key direction:")
         font.bold: true
         color: theme.palette.normal.baseText
         elide: Text.ElideRight
@@ -510,7 +510,7 @@ Column {
         id: taDirSelector
         objectName: "vpnOpenvpnTaDirSelector"
         model: [
-            i18n.dtr("ubuntu-settings-components", "None"),
+            i18n.dtr("lomiri-settings-components", "None"),
             0,
             1,
         ]
@@ -527,7 +527,7 @@ Column {
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Verify peer certificate:")
+            text: i18n.dtr("lomiri-settings-components", "Verify peer certificate:")
             Layout.fillWidth: true
         }
     }
@@ -536,7 +536,7 @@ Column {
         font.bold: true
         color: theme.palette.normal.baseText
         elide: Text.ElideRight
-        text: i18n.dtr("ubuntu-settings-components", "Peer certificate TLS type:")
+        text: i18n.dtr("lomiri-settings-components", "Peer certificate TLS type:")
         visible: remoteCertSetToggle.checked
     }
 
@@ -544,8 +544,8 @@ Column {
         id: remoteCertTlsSelector
         objectName: "vpnOpenvpnRemoteCertTlsSelector"
         model: [
-            i18n.dtr("ubuntu-settings-components", "Server"),
-            i18n.dtr("ubuntu-settings-components", "Client"),
+            i18n.dtr("lomiri-settings-components", "Server"),
+            i18n.dtr("lomiri-settings-components", "Client"),
         ]
         selectedIndex: connection.remoteCertTls
         visible: remoteCertSetToggle.checked
@@ -555,14 +555,14 @@ Column {
         font.bold: true
         color: theme.palette.normal.baseText
         elide: Text.ElideRight
-        text: i18n.dtr("ubuntu-settings-components", "Cipher:")
+        text: i18n.dtr("lomiri-settings-components", "Cipher:")
     }
 
     ListItems.ItemSelector {
         id: cipherSelector
         objectName: "vpnOpenvpnCipherSelector"
         model: [
-            i18n.dtr("ubuntu-settings-components", "Default"),
+            i18n.dtr("lomiri-settings-components", "Default"),
             "DES-CBC",
             "RC2-CBC",
             "DES-EDE-CBC",
@@ -592,7 +592,7 @@ Column {
         }
 
         Label {
-            text: i18n.dtr("ubuntu-settings-components", "Compress data")
+            text: i18n.dtr("lomiri-settings-components", "Compress data")
             Layout.fillWidth: true
         }
     }

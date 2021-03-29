@@ -172,11 +172,11 @@ Item {
 
         function test_createTemplateName() {
             GSettingsController.setFingerprintNames({
-                "tmplId": i18n.dtr("ubuntu-settings-components", "Finger %1").arg(1)
+                "tmplId": i18n.dtr("lomiri-settings-components", "Finger %1").arg(1)
             });
-            compare(pageInstance.createTemplateName(), i18n.dtr("ubuntu-settings-components", "Finger %1").arg(2));
-            pageInstance.renameTemplate("tmplId", i18n.dtr("ubuntu-settings-components", "Finger %1").arg(2));
-            compare(pageInstance.createTemplateName(), i18n.dtr("ubuntu-settings-components", "Finger %1").arg(1));
+            compare(pageInstance.createTemplateName(), i18n.dtr("lomiri-settings-components", "Finger %1").arg(2));
+            pageInstance.renameTemplate("tmplId", i18n.dtr("lomiri-settings-components", "Finger %1").arg(2));
+            compare(pageInstance.createTemplateName(), i18n.dtr("lomiri-settings-components", "Finger %1").arg(1));
         }
 
         function test_assignNames() {
@@ -190,10 +190,10 @@ Item {
             getListObserver().mockList(templateIds, "");
 
             verify(getTemplateEntry(0));
-            compare(getTemplateEntry(0).title.text, i18n.dtr("ubuntu-settings-components", "Finger %1").arg(1));
+            compare(getTemplateEntry(0).title.text, i18n.dtr("lomiri-settings-components", "Finger %1").arg(1));
 
             verify(getTemplateEntry(1));
-            compare(getTemplateEntry(1).title.text, i18n.dtr("ubuntu-settings-components", "Finger %1").arg(2));
+            compare(getTemplateEntry(1).title.text, i18n.dtr("lomiri-settings-components", "Finger %1").arg(2));
 
             verify(getTemplateEntry(2));
             compare(getTemplateEntry(2).title.text, "My finger");
@@ -218,11 +218,11 @@ Item {
             compare(getTemplateEntry(0).title.text, "Existing finger");
 
             verify(getTemplateEntry(1));
-            compare(getTemplateEntry(1).title.text, i18n.dtr("ubuntu-settings-components", "Finger %1").arg(1));
+            compare(getTemplateEntry(1).title.text, i18n.dtr("lomiri-settings-components", "Finger %1").arg(1));
         }
 
         function test_serviceEnrollmentFirstRun() {
-            var targetName = i18n.dtr("ubuntu-settings-components", "Finger %1").arg(1);
+            var targetName = i18n.dtr("lomiri-settings-components", "Finger %1").arg(1);
 
             // A test where the template id is 0.
             getEnrollmentObserver().mockEnroll(0, "");
@@ -235,7 +235,7 @@ Item {
             // Test a case where enrollment processes re-uses the template id
             // Hopefully this will never happen, but it currently does in testing,
             // so test it.
-            var targetName = i18n.dtr("ubuntu-settings-components", "Finger %1").arg(1);
+            var targetName = i18n.dtr("lomiri-settings-components", "Finger %1").arg(1);
 
             getEnrollmentObserver().mockEnroll(0, "");
             verify(getTemplateEntry(0));

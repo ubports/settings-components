@@ -99,7 +99,7 @@ BaseMenu {
                         id: labelRoaming
                         visible: menu.roaming
                         elide: Text.ElideRight
-                        text: i18n.dtr("ubuntu-settings-components", "Roaming")
+                        text: i18n.dtr("lomiri-settings-components", "Roaming")
                         font.pixelSize: menuStyle.subtitleFontSize
                         color: menu.foregroundColor
                         opacity: 0.6
@@ -124,7 +124,7 @@ BaseMenu {
                 visible: menu.locked
                 color: menuStyle.buttonColor
 
-                text: i18n.dtr("ubuntu-settings-components", "Unlock SIM")
+                text: i18n.dtr("lomiri-settings-components", "Unlock SIM")
                 font.pixelSize: menuStyle.buttonFontSize
                 Layout.preferredWidth: implicitWidth + units.gu(5)
                 Layout.preferredHeight: menuStyle.buttonHeight

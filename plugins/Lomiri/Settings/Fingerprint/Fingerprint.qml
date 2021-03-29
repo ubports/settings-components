@@ -79,7 +79,7 @@ Page {
                 id: nameLabel
                 anchors.left: parent.left
                 anchors.right: parent.right
-                text: i18n.dtr("ubuntu-settings-components", "Fingerprint Name")
+                text: i18n.dtr("lomiri-settings-components", "Fingerprint Name")
                 font.weight: Font.Light
             }
 
@@ -106,7 +106,7 @@ Page {
             Button {
                 id: deleteButton
                 objectName: "templateDelete"
-                text: i18n.dtr("ubuntu-settings-components", "Delete Fingerprint")
+                text: i18n.dtr("lomiri-settings-components", "Delete Fingerprint")
                 onClicked: {
                     root.state = "deleting";
                     requestDeletion(templateId)
@@ -122,13 +122,13 @@ Page {
         Dialog {
             id: deletionFailedDialog
             objectName: "fingerprintDeletionFailedDialog"
-            text: i18n.dtr("ubuntu-settings-components",
+            text: i18n.dtr("lomiri-settings-components",
                            "Sorry, the fingerprint could not be deleted.")
 
             Button {
                 objectName: "fingerprintDeleteionFailedOk"
                 onClicked: PopupUtils.close(deletionFailedDialog)
-                text: i18n.dtr("ubuntu-settings-components", "OK")
+                text: i18n.dtr("lomiri-settings-components", "OK")
             }
         }
     }

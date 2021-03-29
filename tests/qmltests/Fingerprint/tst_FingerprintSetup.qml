@@ -104,7 +104,7 @@ Item {
         }
 
         function test_initialState() {
-            var targetText = i18n.dtr("ubuntu-settings-components", "Swipe your finger over the reader.");
+            var targetText = i18n.dtr("lomiri-settings-components", "Swipe your finger over the reader.");
             compare(getStatusLabel().text, targetText);
 
             tryCompare(getDefaultVisual(), "opacity", 1);
@@ -113,7 +113,7 @@ Item {
         }
 
         function test_startedState() {
-            var targetText = i18n.dtr("ubuntu-settings-components", "Tap your finger repeatedly on the reader.");
+            var targetText = i18n.dtr("lomiri-settings-components", "Tap your finger repeatedly on the reader.");
             setupInstance.enrollmentProgressed(0.5, {});
             statusLabelSpy.wait();
             compare(getStatusLabel().text, targetText);
@@ -124,7 +124,7 @@ Item {
         }
 
         function test_failedStatus() {
-            var targetText = i18n.dtr("ubuntu-settings-components", "Sorry, the reader doesn’t seem to be working.");
+            var targetText = i18n.dtr("lomiri-settings-components", "Sorry, the reader doesn’t seem to be working.");
             setupInstance.enrollmentFailed("test failure");
             compare(getStatusLabel().text, targetText);
 
@@ -134,7 +134,7 @@ Item {
         }
 
         function test_successfulState() {
-            var targetText = i18n.dtr("ubuntu-settings-components", "All done!");
+            var targetText = i18n.dtr("lomiri-settings-components", "All done!");
 
             setupInstance.enrollmentCompleted();
             compare(getStatusLabel().text, targetText);
@@ -194,12 +194,12 @@ Item {
             var pl = getProgressLabel();
             setupInstance.enrollmentProgressed(0.5, {});
             tryCompare(pl, "opacity", 1);
-            tryCompare(pl, "text", i18n.dtr("ubuntu-settings-components", "%1%").arg(50));
+            tryCompare(pl, "text", i18n.dtr("lomiri-settings-components", "%1%").arg(50));
         }
 
         function test_progressReadable() {
             setupInstance.enrollmentProgressed(0.6666666667, {});
-            tryCompare(getProgressLabel(), "text", i18n.dtr("ubuntu-settings-components", "%1%").arg(66));
+            tryCompare(getProgressLabel(), "text", i18n.dtr("lomiri-settings-components", "%1%").arg(66));
         }
 
         // This is a visual test where we can confirm that the arrow
