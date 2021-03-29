@@ -16,21 +16,21 @@
 
 // local
 #include "plugin.h"
-#include "ubuntusettingsvpn.h"
+#include "lomirisettingsvpn.h"
 
 // Qt
 #include <QtQml/qqml.h>
 
-static QObject *ubuntuSettingsVpnSingeltonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+static QObject *lomiriSettingsVpnSingeltonProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
 
-    UbuntuSettingsVpn *vpn = new UbuntuSettingsVpn();
+    LomiriSettingsVpn *vpn = new LomiriSettingsVpn();
     return vpn;
 }
 
-void UbuntuSettingsVpnPlugin::registerTypes(const char *uri)
+void LomiriSettingsVpnPlugin::registerTypes(const char *uri)
 {
-    qmlRegisterSingletonType<UbuntuSettingsVpn>(uri, 0, 1, "UbuntuSettingsVpn", ubuntuSettingsVpnSingeltonProvider);
+    qmlRegisterSingletonType<LomiriSettingsVpn>(uri, 0, 1, "LomiriSettingsVpn", lomiriSettingsVpnSingeltonProvider);
 }

@@ -14,18 +14,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UBUNTUSETTINGSVPN_H
-#define UBUNTUSETTINGSVPN_H
+#ifndef LOMIRISETTINGSVPN_H
+#define LOMIRISETTINGSVPN_H
 
 #include <QObject>
 
-class UbuntuSettingsVpn : public QObject
+class LomiriSettingsVpn : public QObject
 {
     Q_OBJECT
 
 
 public:
-    explicit UbuntuSettingsVpn(QObject* parent = nullptr);
+    explicit LomiriSettingsVpn(QObject* parent = nullptr);
 
     enum CertificateError
     {
@@ -43,4 +43,4 @@ public:
 private:
 };
 
-#endif // UBUNTUSETTINGSVPN_H
+#endif // LOMIRISETTINGSVPN_H

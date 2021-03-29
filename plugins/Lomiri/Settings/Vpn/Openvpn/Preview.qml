@@ -16,7 +16,7 @@
 
 import QtQuick 2.4
 import Lomiri.Components 1.3
-import Ubuntu.Settings.Vpn 0.1
+import Lomiri.Settings.Vpn 0.1
 
 Column {
     property var connection
@@ -29,6 +29,26 @@ Column {
     // assume the connection to be installed.
     function showPreview () {
         var c = connection;
+        // “This VPN is not safe to use.”
+        if (c.ca) {
+            var err = LomiriSettingsVpn.isCertificateValid(c.ca);
+            switch (err) {
+            case LomiriSettingsVpn.CERT_NOT_FOUND:
+            case LomiriSettingsVpn.CERT_EMPTY:
+            //case LomiriSettingsVpn.CERT_SELFSIGNED:
+            case LomiriSettingsVpn.CERT_EXPIRED:
+            case LomiriSettingsVpn.CERT_BLACKLISTED:
+                return contentLoader.setSource(
+                   "../PreviewDialog/InvalidCert.qml",
+                   { error: err }
+                );
+            default:
+            case LomiriSettingsVpn.CERT_VALID:
+                break;
+            }
+        } else {
+            return contentLoader.setSource("../PreviewDialog/NoCert.qml");
+        }
 
         // “You’re using this VPN for all Internet traffic.”
         if (c.active && !c.neverDefault) {

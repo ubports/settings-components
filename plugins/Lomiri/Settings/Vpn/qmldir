@@ -1,5 +1,5 @@
-module Ubuntu.Settings.Vpn
-plugin UbuntuSettingsVpn
+module Lomiri.Settings.Vpn
+plugin LomiriSettingsVpn
 
 singleton DialogFileProperties 0.1 DialogFileProperties.qml
 

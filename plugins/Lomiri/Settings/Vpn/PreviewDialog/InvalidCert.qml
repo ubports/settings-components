@@ -16,7 +16,7 @@
 
 import QtQuick 2.4
 import Lomiri.Components 1.3
-import Ubuntu.Settings.Vpn 0.1
+import Lomiri.Settings.Vpn 0.1
 
 Column {
     property var error
@@ -47,19 +47,19 @@ Column {
             var errorMsg;
 
             switch(error) {
-            case UbuntuSettingsVpn.CERT_NOT_FOUND:
+            case LomiriSettingsVpn.CERT_NOT_FOUND:
                 errorMsg = i18n.dtr("ubuntu-settings-components", "The certificate was not found.");
                 break;
-            case UbuntuSettingsVpn.CERT_EMPTY:
+            case LomiriSettingsVpn.CERT_EMPTY:
                 errorMsg = i18n.dtr("ubuntu-settings-components", "The certificate is empty.");
                 break;
-            case UbuntuSettingsVpn.CERT_SELFSIGNED:
+            case LomiriSettingsVpn.CERT_SELFSIGNED:
                 errorMsg = i18n.dtr("ubuntu-settings-components", "The certificate is self signed.");
                 break;
-            case UbuntuSettingsVpn.CERT_EXPIRED:
+            case LomiriSettingsVpn.CERT_EXPIRED:
                 errorMsg = i18n.dtr("ubuntu-settings-components", "The certificate has expired.");
                 break;
-            case UbuntuSettingsVpn.CERT_BLACKLISTED:
+            case LomiriSettingsVpn.CERT_BLACKLISTED:
                 errorMsg = i18n.dtr("ubuntu-settings-components", "The certificate is blacklisted.");
                 break;
             }
