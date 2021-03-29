@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lomiri-settings-components\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-18 15:20+0000\n"
+"POT-Creation-Date: 2021-03-29 21:15+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: plugins/Lomiri/Settings/Fingerprint/Fingerprint.qml:131
 #: plugins/Lomiri/Settings/Fingerprint/Fingerprints.qml:362
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:138
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:139
 #: plugins/Lomiri/Settings/Vpn/VpnEditor.qml:149
 msgid "OK"
 msgstr ""
@@ -75,8 +75,8 @@ msgid "Are you sure you want to forget all stored fingerprints?"
 msgstr ""
 
 #: plugins/Lomiri/Settings/Fingerprint/Fingerprints.qml:336
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:355
-#: plugins/Lomiri/Settings/Vpn/DialogFile.qml:161
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:356
+#: plugins/Lomiri/Settings/Vpn/DialogFile.qml:165
 #: plugins/Lomiri/Settings/Vpn/VpnEditor.qml:136
 #: plugins/Lomiri/Settings/Vpn/VpnPreviewDialog.qml:104
 msgid "Cancel"
@@ -88,36 +88,36 @@ msgid "Remove"
 msgstr ""
 
 #: plugins/Lomiri/Settings/Fingerprint/Fingerprints.qml:357
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:103
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:104
 msgid "Sorry, the reader doesn’t seem to be working."
 msgstr ""
 
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:61
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:62
 msgid "Tap your finger repeatedly on the reader."
 msgstr ""
 
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:78
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:79
 msgid "Keep your finger on the reader for longer."
 msgstr ""
 
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:94
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:95
 msgid "Back"
 msgstr ""
 
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:131
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:132
 msgid "All done!"
 msgstr ""
 
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:297
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:298
 msgid "Swipe your finger over the reader."
 msgstr ""
 
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:311
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:312
 #, qt-format
 msgid "%1%"
 msgstr ""
 
-#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:380
+#: plugins/Lomiri/Settings/Fingerprint/Setup.qml:381
 msgid "Next"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgstr ""
 msgid "Send"
 msgstr ""
 
-#: plugins/Lomiri/Settings/Vpn/DialogFile.qml:170
+#: plugins/Lomiri/Settings/Vpn/DialogFile.qml:173
 msgid "Accept"
 msgstr ""
 
@@ -456,7 +456,7 @@ msgstr ""
 msgid "Set up VPN"
 msgstr ""
 
-#: plugins/Lomiri/Settings/Vpn/VpnList.qml:62
+#: plugins/Lomiri/Settings/Vpn/VpnList.qml:63
 msgid "Delete configuration"
 msgstr ""
 
@@ -470,7 +470,7 @@ msgstr ""
 msgid "VPN"
 msgstr ""
 
-#: plugins/Lomiri/Settings/Vpn/VpnPreviewDialog.qml:96
+#: plugins/Lomiri/Settings/Vpn/VpnPreviewDialog.qml:95
 msgid "Change"
 msgstr ""
 
