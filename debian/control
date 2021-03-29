@@ -1,7 +1,7 @@
 Source: lomiri-settings-components
 Section: misc
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Maintainer: UBports Developers <developers@ubports.com>
 Build-Depends: cmake,
                cmake-extras (>= 0.10),
                debhelper (>= 9),
@@ -19,12 +19,7 @@ Build-Depends: cmake,
                suru-icon-theme,
                xvfb,
 Standards-Version: 3.9.4
-Homepage: https://launchpad.net/ubuntu-settings-components
-# If you don't have have commit access to this branch but would like to upload
-# directly to Ubuntu, don't worry: your changes will be merged back into the
-# upstream branch
-Vcs-Bzr: lp:ubuntu-settings-components
-X-Ubuntu-Use-Langpack: yes
+Homepage: https://gitlab.com/ubports/core/lomiri-settings-components
 
 Package: qml-module-lomiri-settings-components
 Architecture: any
@@ -38,5 +33,5 @@ Depends: gsettings-ubuntu-schemas (>= 0.0.7),
          suru-icon-theme,
          ${misc:Depends},
          ${shlibs:Depends},
-Description: Ubuntu settings Components
- Ubuntu settings components for Unity8
+Description: Lomiri settings Components
+ Lomiri settings components for Lomiri Desktop Environment

@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: https://launchpad.net/ubuntu-settings-components
-Upstream-Name: ubuntu-settings-components
-Upstream-Contact: Andrea Cimitan <andrea.cimitan@canonical.com>
+Source: https://gitlab.com/ubports/core/lomiri-settings-components
+Upstream-Name: lomiri-settings-components
+Upstream-Contact: UBports Developers <developers@ubports.com>
 
 Files: *
 Copyright: 2013 Canonical, Ltd.
