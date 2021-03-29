@@ -1,4 +1,4 @@
 #!/bin/sh
 
 set -eux
-sh ./po/update-usc-pot
+sh ./po/update-lsc-pot
