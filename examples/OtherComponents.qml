@@ -230,7 +230,7 @@ Item {
 
             ModemInfoItem {
                 simIdentifierText: "SIM 2"
-                statusText: "Ubuntu 5G"
+                statusText: "UBports 5G"
                 statusIcon: "gsm-3g-medium-secure"
                 roaming: false
                 locked: true
