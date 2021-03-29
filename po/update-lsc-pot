@@ -6,7 +6,7 @@ PO_DIR=$PWD
 PROGNAME=$(basename $0)
 
 # Create a list of files to scan
-GETTEXT_FILES=$(mktemp --tmpdir usc.lst.XXXXX)
+GETTEXT_FILES=$(mktemp --tmpdir lsc.lst.XXXXX)
 trap 'rm -f "$GETTEXT_FILES"' EXIT
 cd ..
 find \( -name '*.h' -o -name '*.cpp' -o -name '*.qml' -o -name '*.js' \) \
@@ -15,7 +15,7 @@ find \( -name '*.h' -o -name '*.cpp' -o -name '*.qml' -o -name '*.js' \) \
 
 # Generate pot from our list
 xgettext \
-    --output $PO_DIR/ubuntu-settings-components.pot \
+    --output $PO_DIR/lomiri-settings-components.pot \
     --from-code=UTF-8 \
     --files-from $GETTEXT_FILES \
     --qt --c++ \
@@ -29,8 +29,8 @@ xgettext \
     --keyword=tag \
     --keyword=tag:1c,2 \
     --keyword=dgettext_datetime \
-    --package-name="ubuntu-settings-components" \
+    --package-name="lomiri-settings-components" \
     --copyright-holder="Canonical Ltd." \
     --from-code="UTF-8"
 
-echo "$PROGNAME: $PO_DIR/ubuntu-settings-components.pot updated"
+echo "$PROGNAME: $PO_DIR/lomiri-settings-components.pot updated"

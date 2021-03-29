@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 2.8.9)
 find_package(Gettext REQUIRED)
 
 SET(POT_FILE
-  ubuntu-settings-components.pot
+  lomiri-settings-components.pot
 )
 
 FILE(GLOB PO_FILES
   *.po
 )
 
-SET(MO_FILE ubuntu-settings-components.mo)
+SET(MO_FILE lomiri-settings-components.mo)
 
 FOREACH(_file ${PO_FILES})
   GET_FILENAME_COMPONENT(_lang ${_file} NAME_WE)
@@ -26,7 +26,7 @@ FOREACH(_file ${PO_FILES})
 ENDFOREACH(_file)
 
 ADD_CUSTOM_COMMAND(OUTPUT ${POT_FILE}
-  COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/update-usc-pot
+  COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/update-lsc-pot
 )
 ADD_CUSTOM_TARGET(pot_file
   DEPENDS ${POT_FILE}
