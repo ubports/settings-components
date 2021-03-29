@@ -51,7 +51,7 @@ Item {
                     tag: "openvpn bad cert",
                     connection: {
                         id: 'openvpn bad cert',
-                        remote: "ubuntu.com",
+                        remote: "example.com",
                         type: 0, // openvpn
                         ca: "bad.cert",
                         active: false,

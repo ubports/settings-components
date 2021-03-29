@@ -52,7 +52,7 @@ Item {
                     tag: "openvpn upunused",
                     connection: {
                         id: 'openvpn unused',
-                        remote: "ubuntu.com",
+                        remote: "example.com",
                         type: 0, // openvpn
                         ca: "okay",
                         active: false,
@@ -64,7 +64,7 @@ Item {
                     tag: "openvpn all",
                     connection: {
                         id: 'openvpn all',
-                        remote: "ubuntu.com",
+                        remote: "example.com",
                         type: 0, // openvpn
                         ca: "okay",
                         active: true,
@@ -76,7 +76,7 @@ Item {
                     tag: "openvpn some",
                     connection: {
                         id: 'openvpn some',
-                        remote: "ubuntu.com",
+                        remote: "example.com",
                         type: 0, // openvpn
                         ca: "okay",
                         active: true,
@@ -88,7 +88,7 @@ Item {
                     tag: "openvpn no ca",
                     connection: {
                         id: 'openvpn no ca',
-                        remote: "ubuntu.com",
+                        remote: "example.com",
                         type: 0, // openvpn
                         active: true,
                         neverDefault: false
@@ -99,7 +99,7 @@ Item {
                     tag: "pptp all",
                     connection: {
                         id: 'pptp all',
-                        gateway: "ubuntu.com",
+                        gateway: "example.com",
                         type: 1, // pptp
                         active: true,
                         neverDefault: false
@@ -110,7 +110,7 @@ Item {
                     tag: "pptp unused",
                     connection: {
                         id: 'pptp unused',
-                        gateway: "ubuntu.com",
+                        gateway: "example.com",
                         type: 1, // pptp
                         active: false,
                         neverDefault: false
@@ -121,7 +121,7 @@ Item {
                     tag: "pptp some",
                     connection: {
                         id: 'pptp some',
-                        gateway: "ubuntu.com",
+                        gateway: "example.com",
                         type: 1, // pptp
                         active: true,
                         neverDefault: true
