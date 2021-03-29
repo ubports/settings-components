@@ -17,8 +17,8 @@
 import QtQuick 2.4
 import QtTest 1.0
 import Lomiri.Settings.Test 0.1
-import Lomiri.Settings.Components 0.1 as USC
-import Lomiri.Settings.Menus 0.1 as USM
+import Lomiri.Settings.Components 0.1 as LSC
+import Lomiri.Settings.Menus 0.1 as LSM
 import Lomiri.Components 1.3
 
 Item {
@@ -92,7 +92,7 @@ Item {
                 id: switchControl
                 anchors.verticalCenter: parent.verticalCenter
 
-                USC.ServerPropertySynchroniser {
+                LSC.ServerPropertySynchroniser {
                     id: switchSync
                     objectName: "switchSync"
 
@@ -123,7 +123,7 @@ Item {
                 id: checkControl
                 anchors.verticalCenter: parent.verticalCenter
 
-                USC.ServerPropertySynchroniser {
+                LSC.ServerPropertySynchroniser {
                     id: checkSync
                     objectName: "checkSync"
 
@@ -160,7 +160,7 @@ Item {
                 maximumValue: 100.0
 
                 property real serverValue: sliderBackend.value
-                USC.ServerPropertySynchroniser {
+                LSC.ServerPropertySynchroniser {
                     id: sliderSync
                     objectName: "sliderSync"
 
@@ -195,13 +195,13 @@ Item {
             anchors.left: parent.left
             anchors.right: parent.right
 //FIXME
-            USM.AccessPointMenu {
+            LSM.AccessPointMenu {
                 id: apMenu
                 width: units.gu(30)
 
                 text: "Test Check Menu"
 
-                USC.ServerPropertySynchroniser {
+                LSC.ServerPropertySynchroniser {
                     id: apMenuSync
                     objectName: "apMenuSync"
 

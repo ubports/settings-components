@@ -21,7 +21,7 @@
 
 import QtQuick 2.4
 import Lomiri.Components 1.3
-import Lomiri.Settings.Components 0.1 as USC
+import Lomiri.Settings.Components 0.1 as LSC
 
 SimpleMessageMenu {
     id: menu
@@ -32,7 +32,7 @@ SimpleMessageMenu {
 
     signal replied(string value)
 
-    footer: USC.ActionTextField {
+    footer: LSC.ActionTextField {
         id: actionTextField
         activateEnabled: true
         buttonText: i18n.dtr("lomiri-settings-components", "Send")

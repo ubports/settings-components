@@ -21,7 +21,7 @@
 
 import QtQuick 2.4
 import Lomiri.Components 1.3
-import Lomiri.Settings.Components 0.1 as USC
+import Lomiri.Settings.Components 0.1 as LSC
 
 BaseMenu {
     id: menu
@@ -46,7 +46,7 @@ BaseMenu {
         id: layout
         anchors { right: parent.right; left: parent.left }
 
-        USC.MessageHeader {
+        LSC.MessageHeader {
             id: messageHeader
 
             avatar: menu.avatar != "" ? menu.avatar : "image://theme/contact"
