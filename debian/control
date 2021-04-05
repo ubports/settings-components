@@ -25,13 +25,63 @@ Package: qml-module-lomiri-settings-components
 Architecture: any
 Multi-Arch: same
 Pre-Depends: dpkg (>= 1.15.6~),
-Depends: gsettings-ubuntu-schemas (>= 0.0.7),
-         qml-module-biometryd,
-         qml-module-qtquick-layouts,
-         qml-module-gsettings1.0,
-         qml-module-lomiri-components (>= 1.1),
+Depends: qml-module-lomiri-components (>= 1.1),
+         qml-module-qtquick2,
          suru-icon-theme,
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Lomiri settings Components
  Lomiri settings components for Lomiri Desktop Environment
+ .
+ This package contains miscellaneous settings-related components.
+
+Package: qml-module-lomiri-settings-fingerprint
+Architecture: any
+Multi-Arch: same
+Pre-Depends: dpkg (>= 1.15.6~),
+Depends: gsettings-ubuntu-schemas (>= 0.0.7),
+         qml-module-biometryd,
+         qml-module-qtquick2,
+         qml-module-qtquick-layouts,
+         qml-module-gsettings1.0,
+         qml-module-lomiri-components (>= 1.1),
+         qml-module-lomiri-settings-components,
+         suru-icon-theme,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Lomiri settings Components
+ Lomiri settings components for Lomiri Desktop Environment
+ .
+ This package contains fingerprint-related components, connecting to Biometryd.
+
+Package: qml-module-lomiri-settings-menus
+Architecture: any
+Multi-Arch: same
+Pre-Depends: dpkg (>= 1.15.6~),
+Depends: qml-module-lomiri-components (>= 1.1),
+         qml-module-lomiri-settings-components,
+         qml-module-lomiri-thumbnailer0.1,
+         qml-module-qtquick2,
+         qml-module-qtquick-layouts,
+         suru-icon-theme,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Lomiri settings Components
+ Lomiri settings components for Lomiri Desktop Environment
+ .
+ This package contains components of menus used in settings.
+
+Package: qml-module-lomiri-settings-vpn
+Architecture: any
+Multi-Arch: same
+Pre-Depends: dpkg (>= 1.15.6~),
+Depends: qml-module-qtquick-layouts,
+         qml-module-lomiri-components (>= 1.1),
+         qml-module-lomiri-settings-components,
+         suru-icon-theme,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Lomiri settings Components
+ Lomiri settings components for Lomiri Desktop Environment
+ .
+ This package contains VPN-related components.
