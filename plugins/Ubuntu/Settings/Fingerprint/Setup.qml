@@ -149,7 +149,16 @@ Page {
     ]
 
     header: PageHeader {
-        visible: false
+         title: i18n.tr("Fingerprint Setup")
+         trailingActionBar.actions: [
+            Action {
+                id: doneButton
+                iconName: "ok"
+                enabled: false
+                text: i18n.dtr("ubuntu-settings-components", "Next")
+                onTriggered: {
+                    onClicked: root.done()
+                }
     }
 
     Item {
@@ -320,65 +329,6 @@ Page {
                 NumberAnimation {
                     duration: UbuntuAnimation.SlowDuration
                     easing: UbuntuAnimation.StandardEasing
-                }
-            }
-        }
-
-        Rectangle {
-            id: actions
-
-            anchors {
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
-
-            // Color and height values are copied from the Wizard.
-            color: "#f5f5f5"
-            height: units.gu(5)
-
-            AbstractButton {
-                id: cancelButton
-                property alias text: cancelButtonText.text
-                objectName: "fingerprintSetupCancelButton"
-                anchors {
-                    left: parent.left
-                    leftMargin: units.gu(3)
-                    verticalCenter: parent.verticalCenter
-                }
-                height: parent.height
-                width: units.gu(10)
-                onClicked: root.cancel()
-
-                Label {
-                    id: cancelButtonText
-                    anchors.verticalCenter: parent.verticalCenter
-                    text: i18n.dtr("ubuntu-settings-components", "Cancel")
-                }
-            }
-
-            AbstractButton {
-                id: doneButton
-                property alias text: doneButtonText.text
-                objectName: "fingerprintSetupDoneButton"
-                anchors {
-                    right: parent.right
-                    rightMargin: units.gu(3)
-                    verticalCenter: parent.verticalCenter
-                }
-                enabled: false
-                height: parent.height
-                width: units.gu(10)
-                onClicked: root.done()
-
-                Label {
-                    id: doneButtonText
-                    anchors {
-                        verticalCenter: parent.verticalCenter
-                        right: parent.right
-                    }
-                    font.bold: parent.enabled
-                    text: i18n.dtr("ubuntu-settings-components", "Next")
                 }
             }
         }
